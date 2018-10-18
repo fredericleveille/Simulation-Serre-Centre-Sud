@@ -8785,20 +8785,6 @@ OS:ShadingSurface,
   -3.13987543200853, 6.28694495686823, 2.4384, !- X,Y,Z Vertex 3 {m}
   -3.13987543200853, 6.28694495686823, 9.6281875; !- X,Y,Z Vertex 4 {m}
 
-OS:WeatherFile,
-  {10fa7c03-7f5c-4508-8d19-b90fa260beb5}, !- Handle
-  Montreal Int'l,                         !- City
-  PQ,                                     !- State Province Region
-  CAN,                                    !- Country
-  WYEC2-B-94792,                          !- Data Source
-  716270,                                 !- WMO Number
-  45.47,                                  !- Latitude {deg}
-  -73.75,                                 !- Longitude {deg}
-  -5,                                     !- Time Zone {hr}
-  36,                                     !- Elevation {m}
-  file:CAN_PQ_Montreal.Intl.AP.716270_CWEC.epw, !- Url
-  3C3F39E2;                               !- Checksum
-
 OS:ScheduleTypeLimits,
   {fdefdbc9-124c-4e01-8ce1-e05efd657e7a}, !- Handle
   Dimensionless,                          !- Name
@@ -9125,4 +9111,18 @@ OS:Connection,
   4,                                      !- Outlet Port
   {2a438ea2-b110-438e-bde4-ebe6a0c5ce8c}, !- Target Object
   2;                                      !- Inlet Port
+
+OS:WeatherFile,
+  {a2900b27-d5eb-48ce-9fe8-93c1f03d7806}, !- Handle
+  Montreal Int'l,                         !- City
+  PQ,                                     !- State Province Region
+  CAN,                                    !- Country
+  WYEC2-B-94792,                          !- Data Source
+  716270,                                 !- WMO Number
+  45.47,                                  !- Latitude {deg}
+  -73.75,                                 !- Longitude {deg}
+  -5,                                     !- Time Zone {hr}
+  36,                                     !- Elevation {m}
+  file:CAN_PQ_Montreal.Intl.AP.716270_CWEC.epw, !- Url
+  3C3F39E2;                               !- Checksum
 
