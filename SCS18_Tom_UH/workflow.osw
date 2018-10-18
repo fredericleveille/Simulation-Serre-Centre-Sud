@@ -68,8 +68,17 @@
          "measure_dir_name" : "AddOutputVariable",
          "modeler_description" : "The measure just passes in the string and does not validate that it is a proper variable name. It is up to the user to know this or to look at the .rdd file from a previous simulation run.",
          "name" : "Add Zone Mean Air Temperature"
+      },
+      {
+         "arguments" : {
+            "variable_name" : "Zone Air Relative Humidity"
+         },
+         "description" : "This measure adds an output variable at the requested reporting frequency.",
+         "measure_dir_name" : "AddOutputVariable",
+         "modeler_description" : "The measure just passes in the string and does not validate that it is a proper variable name. It is up to the user to know this or to look at the .rdd file from a previous simulation run.",
+         "name" : "Add Zone Air Relative Humidity"
       }
    ],
-   "updated_at" : "20181018T180317Z",
+   "updated_at" : "20181018T182754Z",
    "weather_file" : "CAN_PQ_Montreal.Intl.AP.716270_CWEC.epw"
 }
