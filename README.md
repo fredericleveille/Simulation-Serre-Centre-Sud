@@ -11,3 +11,11 @@ Then a new branch with only cooling system could be tested before tryin to "merg
 A branch could be made to investigate the plants loads as well.
 Ideally there would be a python program to visualise outputs after each simulation, but I probably won't have enough time to look this up.
 
+##RTPU
+Rooftop packaged unit didn't change much of the gaz consumption. 2.04E+11 vs 2.10E+11 for model withou it.
+Temperature were better controled during summer.
+However, it consumed way much more electricity. 39283.33 kWh vs 4318.97 kWh. 8 times more.
+RHwas between 30 and 70%. So no need to control humidity without plants loads.
+
+
+
