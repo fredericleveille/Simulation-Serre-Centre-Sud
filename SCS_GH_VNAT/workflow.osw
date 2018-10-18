@@ -1,0 +1,28 @@
+{
+   "created_at" : "20181018T173331Z",
+   "seed_file" : "../SCS_GH_VNAT.osm",
+   "steps" : [
+      {
+         "arguments" : {
+            "aggt" : 18.899999999999999,
+            "apgt" : 10.18,
+            "dgt" : 3.2400000000000002,
+            "fgt" : 4.0800000000000001,
+            "jgt" : 2.4700000000000002,
+            "julgt" : 20.550000000000001,
+            "jungt" : 19.43,
+            "magt" : 16.02,
+            "margt" : 7.2199999999999998,
+            "ngt" : 6.04,
+            "ogt" : 10.289999999999999,
+            "sgt" : 14.609999999999999
+         },
+         "description" : "This measure sets the groundsurfacetemperature to a value defined by the user\n",
+         "measure_dir_name" : "set_ground_surface_temperature",
+         "modeler_description" : "",
+         "name" : "Set ground surface temperature"
+      }
+   ],
+   "updated_at" : "20181018T173730Z",
+   "weather_file" : "CAN_PQ_Montreal.Intl.AP.716270_CWEC.epw"
+}

@@ -7206,20 +7206,6 @@ OS:ShadingSurface,
   -3.13987543200853, 6.28694495686823, 2.4384, !- X,Y,Z Vertex 3 {m}
   -3.13987543200853, 6.28694495686823, 9.6281875; !- X,Y,Z Vertex 4 {m}
 
-OS:WeatherFile,
-  {10fa7c03-7f5c-4508-8d19-b90fa260beb5}, !- Handle
-  Montreal Int'l,                         !- City
-  PQ,                                     !- State Province Region
-  CAN,                                    !- Country
-  WYEC2-B-94792,                          !- Data Source
-  716270,                                 !- WMO Number
-  45.47,                                  !- Latitude {deg}
-  -73.75,                                 !- Longitude {deg}
-  -5,                                     !- Time Zone {hr}
-  36,                                     !- Elevation {m}
-  file:files/CAN_PQ_Montreal.Intl.AP.716270_CWEC.epw, !- Url
-  3C3F39E2;                               !- Checksum
-
 OS:Lights:Definition,
   {5f1dfbf5-60b9-4cfc-ada6-38189cf76eb0}, !- Handle
   HPS Lights 400W,                        !- Name
@@ -16855,4 +16841,18 @@ OS:Schedule:Day,
   24,                                     !- Hour 1
   0,                                      !- Minute 1
   0.200000002980232;                      !- Value Until Time 1
+
+OS:WeatherFile,
+  {2e4b91da-0be5-4abb-bb5d-bd6b1da10eec}, !- Handle
+  Montreal Int'l,                         !- City
+  PQ,                                     !- State Province Region
+  CAN,                                    !- Country
+  WYEC2-B-94792,                          !- Data Source
+  716270,                                 !- WMO Number
+  45.47,                                  !- Latitude {deg}
+  -73.75,                                 !- Longitude {deg}
+  -5,                                     !- Time Zone {hr}
+  36,                                     !- Elevation {m}
+  file:CAN_PQ_Montreal.Intl.AP.716270_CWEC.epw, !- Url
+  3C3F39E2;                               !- Checksum
 
