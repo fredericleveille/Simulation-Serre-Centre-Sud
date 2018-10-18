@@ -21,8 +21,55 @@
          "measure_dir_name" : "set_ground_surface_temperature",
          "modeler_description" : "",
          "name" : "Set ground surface temperature"
+      },
+      {
+         "arguments" : {
+            "variable_name" : "Heating Coil Gas Energy "
+         },
+         "description" : "This measure adds an output variable at the requested reporting frequency.",
+         "measure_dir_name" : "AddOutputVariable",
+         "modeler_description" : "The measure just passes in the string and does not validate that it is a proper variable name. It is up to the user to know this or to look at the .rdd file from a previous simulation run.",
+         "name" : "AddOutputVariable Heating Coil Gas Energy "
+      },
+      {
+         "arguments" : {
+            "variable_name" : "Facility Total Purchased Electric Energy"
+         },
+         "description" : "This measure adds an output variable at the requested reporting frequency.",
+         "measure_dir_name" : "AddOutputVariable",
+         "modeler_description" : "The measure just passes in the string and does not validate that it is a proper variable name. It is up to the user to know this or to look at the .rdd file from a previous simulation run.",
+         "name" : "Add Facility Total Purchased Electric Energy"
+      },
+      {
+         "arguments" : {
+            "reporting_frequency" : "runperiod",
+            "variable_name" : "Facility Total Purchased Electric Energy"
+         },
+         "description" : "This measure adds an output variable at the requested reporting frequency.",
+         "measure_dir_name" : "AddOutputVariable",
+         "modeler_description" : "The measure just passes in the string and does not validate that it is a proper variable name. It is up to the user to know this or to look at the .rdd file from a previous simulation run.",
+         "name" : "Add yearly electric consumption"
+      },
+      {
+         "arguments" : {
+            "reporting_frequency" : "runperiod",
+            "variable_name" : "Heating Coil Gas Energy "
+         },
+         "description" : "This measure adds an output variable at the requested reporting frequency.",
+         "measure_dir_name" : "AddOutputVariable",
+         "modeler_description" : "The measure just passes in the string and does not validate that it is a proper variable name. It is up to the user to know this or to look at the .rdd file from a previous simulation run.",
+         "name" : "yearly gaz consumption"
+      },
+      {
+         "arguments" : {
+            "variable_name" : "Zone Mean Air Temperature"
+         },
+         "description" : "This measure adds an output variable at the requested reporting frequency.",
+         "measure_dir_name" : "AddOutputVariable",
+         "modeler_description" : "The measure just passes in the string and does not validate that it is a proper variable name. It is up to the user to know this or to look at the .rdd file from a previous simulation run.",
+         "name" : "Add Zone Mean Air Temperature"
       }
    ],
-   "updated_at" : "20181018T175201Z",
+   "updated_at" : "20181018T180317Z",
    "weather_file" : "CAN_PQ_Montreal.Intl.AP.716270_CWEC.epw"
 }

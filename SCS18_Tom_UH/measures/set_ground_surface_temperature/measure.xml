@@ -2,8 +2,8 @@
   <schema_version>3.0</schema_version>
   <name>set_groud_surface_temperature</name>
   <uid>42a096b8-efe3-4419-b40a-7dbdf7216726</uid>
-  <version_id>a1b25002-5ac2-4486-9859-1c79c7aac647</version_id>
-  <version_modified>20180719T173416Z</version_modified>
+  <version_id>aa6c3e62-2819-4bf1-86f0-4aa0062a14d2</version_id>
+  <version_modified>20181018T180056Z</version_modified>
   <xml_checksum>7AD75066</xml_checksum>
   <class_name>SetGroudSurfaceTemperature</class_name>
   <display_name>Set ground surface temperature</display_name>
@@ -168,12 +168,6 @@
       <filetype>rb</filetype>
       <usage_type>script</usage_type>
       <checksum>2B5E8BEF</checksum>
-    </file>
-    <file>
-      <filename>desktop.ini</filename>
-      <filetype>ini</filetype>
-      <usage_type>test</usage_type>
-      <checksum>A5420DBA</checksum>
     </file>
   </files>
 </measure>
