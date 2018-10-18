@@ -9123,11 +9123,11 @@ OS:WeatherFile,
   -73.75,                                 !- Longitude {deg}
   -5,                                     !- Time Zone {hr}
   36,                                     !- Elevation {m}
-  file:///C:/Users/levei/AppData/Local/Temp/OpenStudioApp.D16228/resources/files/CAN_PQ_Montreal.Intl.AP.716270_CWEC.epw, !- Url
+  file:///C:/Users/levei/AppData/Local/Temp/OpenStudioApp.T16228/resources/files/CAN_PQ_Montreal.Intl.AP.716270_CWEC.epw, !- Url
   3C3F39E2;                               !- Checksum
 
 OS:Site:GroundTemperature:BuildingSurface,
-  {ee85da5f-16b5-41b6-af35-7c44e2087edc}, !- Handle
+  {9bc7afa7-0295-41d2-8d1a-cc510b4d501c}, !- Handle
   2.47,                                   !- January Ground Temperature {C}
   4.08,                                   !- February Ground Temperature {C}
   7.22,                                   !- March Ground Temperature {C}
@@ -9140,4 +9140,39 @@ OS:Site:GroundTemperature:BuildingSurface,
   10.29,                                  !- October Ground Temperature {C}
   6.04,                                   !- November Ground Temperature {C}
   3.24;                                   !- December Ground Temperature {C}
+
+OS:Output:Variable,
+  {378c5be4-e7ca-44cd-8054-a887e71ffb1c}, !- Handle
+  Output Variable 1,                      !- Name
+  *,                                      !- Key Value
+  Heating Coil Gas Energy ,               !- Variable Name
+  hourly;                                 !- Reporting Frequency
+
+OS:Output:Variable,
+  {10eb8614-9eae-4fe1-819d-746a3ee89853}, !- Handle
+  Output Variable 2,                      !- Name
+  *,                                      !- Key Value
+  Facility Total Purchased Electric Energy, !- Variable Name
+  hourly;                                 !- Reporting Frequency
+
+OS:Output:Variable,
+  {6a663c2e-d73e-474d-a060-3ef7ef8bcad4}, !- Handle
+  Output Variable 3,                      !- Name
+  *,                                      !- Key Value
+  Facility Total Purchased Electric Energy, !- Variable Name
+  runperiod;                              !- Reporting Frequency
+
+OS:Output:Variable,
+  {53927034-1651-41f2-92e9-86bea65952ea}, !- Handle
+  Output Variable 4,                      !- Name
+  *,                                      !- Key Value
+  Heating Coil Gas Energy ,               !- Variable Name
+  runperiod;                              !- Reporting Frequency
+
+OS:Output:Variable,
+  {c512bc01-646d-4233-83f1-9b2fcf5ffece}, !- Handle
+  Output Variable 5,                      !- Name
+  *,                                      !- Key Value
+  Zone Mean Air Temperature,              !- Variable Name
+  hourly;                                 !- Reporting Frequency
 
