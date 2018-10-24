@@ -17,5 +17,9 @@ Temperature were better controled during summer.
 However, it consumed way much more electricity. 39283.33 kWh vs 4318.97 kWh. 8 times more.
 RHwas between 30 and 70%. So no need to control humidity without plants loads.
 
-
+##Plants loads
+A xlsx file was created to Look for sensible and latent heat according to inside conditions based on Marie-Hélène's work.
+First iteration for plant loads was made with 70% RH even tho RH max was 67% without plants.
+Simulation will be run to see if with those latent loads, RH would rise to values around 70% (without humidity control)
+Two .csv hourly schedule were created with the fractional value calculated within the .xlsx file.
 
