@@ -6156,7 +6156,8 @@ OS:ThermalZone,
   ,                                       !- Illuminance Map Name
   {b8b73690-c95f-40da-97fc-96dc9637b211}, !- Group Rendering Name
   {d702b798-4510-4639-9713-62cb7b081a09}, !- Thermostat Name
-  No;                                     !- Use Ideal Air Loads
+  No,                                     !- Use Ideal Air Loads
+  {2a0d409b-70b6-4443-9882-36b16f285bd7}; !- Humidistat Name
 
 OS:Node,
   {89d6c9e8-7f93-40de-9316-67f14204be10}, !- Handle
@@ -8478,7 +8479,7 @@ OS:Schedule:Day,
   ,                                       !- Interpolate to Timestep
   24,                                     !- Hour 1
   0,                                      !- Minute 1
-  90;                                     !- Value Until Time 1
+  80;                                     !- Value Until Time 1
 
 OS:OtherEquipment:Definition,
   {98a49a5a-8b92-4df0-84f7-e2d52284581b}, !- Handle
@@ -26056,4 +26057,25 @@ OS:Schedule:FixedInterval,
   0.370539897,                            !- Value 8758
   0.370539897,                            !- Value 8759
   0.370539897;                            !- Value 8760
+
+OS:ZoneControl:Humidistat,
+  {2a0d409b-70b6-4443-9882-36b16f285bd7}, !- Handle
+  Zone Control Humidistat 1,              !- Name
+  {056862e6-70c2-478b-ab18-d564b0f0363e}, !- Humidifying Relative Humidity Setpoint Schedule Name
+  {387fe373-8b32-42c4-8451-ecbec655cc2c}; !- Dehumidifying Relative Humidity Setpoint Schedule Name
+
+OS:Schedule:Ruleset,
+  {056862e6-70c2-478b-ab18-d564b0f0363e}, !- Handle
+  Serre hum RH Stpt,                      !- Name
+  {69e5f480-78a4-49f5-aba6-4b04dbe1164a}, !- Schedule Type Limits Name
+  {eae46718-2f2b-43b2-b1bc-a34120ab4368}; !- Default Day Schedule Name
+
+OS:Schedule:Day,
+  {eae46718-2f2b-43b2-b1bc-a34120ab4368}, !- Handle
+  Schedule Day 34,                        !- Name
+  {69e5f480-78a4-49f5-aba6-4b04dbe1164a}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  59.9999961853027;                       !- Value Until Time 1
 

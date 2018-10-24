@@ -6156,7 +6156,8 @@ OS:ThermalZone,
   ,                                       !- Illuminance Map Name
   {b8b73690-c95f-40da-97fc-96dc9637b211}, !- Group Rendering Name
   {d702b798-4510-4639-9713-62cb7b081a09}, !- Thermostat Name
-  No;                                     !- Use Ideal Air Loads
+  No,                                     !- Use Ideal Air Loads
+  {2a0d409b-70b6-4443-9882-36b16f285bd7}; !- Humidistat Name
 
 OS:Node,
   {89d6c9e8-7f93-40de-9316-67f14204be10}, !- Handle
@@ -7811,7 +7812,7 @@ OS:WeatherFile,
   -73.75,                                 !- Longitude {deg}
   -5,                                     !- Time Zone {hr}
   36,                                     !- Elevation {m}
-  file:///C:/Users/levei/AppData/Local/Temp/OpenStudioApp.b10272/resources/files/CAN_PQ_Montreal.Intl.AP.716270_CWEC.epw, !- Url
+  file:///C:/Users/levei/AppData/Local/Temp/OpenStudioApp.u10272/resources/files/CAN_PQ_Montreal.Intl.AP.716270_CWEC.epw, !- Url
   3C3F39E2;                               !- Checksum
 
 OS:Schedule:Ruleset,
@@ -8478,7 +8479,7 @@ OS:Schedule:Day,
   ,                                       !- Interpolate to Timestep
   24,                                     !- Hour 1
   0,                                      !- Minute 1
-  90;                                     !- Value Until Time 1
+  80;                                     !- Value Until Time 1
 
 OS:OtherEquipment:Definition,
   {98a49a5a-8b92-4df0-84f7-e2d52284581b}, !- Handle
@@ -26057,8 +26058,29 @@ OS:Schedule:FixedInterval,
   0.370539897,                            !- Value 8759
   0.370539897;                            !- Value 8760
 
+OS:ZoneControl:Humidistat,
+  {2a0d409b-70b6-4443-9882-36b16f285bd7}, !- Handle
+  Zone Control Humidistat 1,              !- Name
+  {056862e6-70c2-478b-ab18-d564b0f0363e}, !- Humidifying Relative Humidity Setpoint Schedule Name
+  {387fe373-8b32-42c4-8451-ecbec655cc2c}; !- Dehumidifying Relative Humidity Setpoint Schedule Name
+
+OS:Schedule:Ruleset,
+  {056862e6-70c2-478b-ab18-d564b0f0363e}, !- Handle
+  Serre hum RH Stpt,                      !- Name
+  {69e5f480-78a4-49f5-aba6-4b04dbe1164a}, !- Schedule Type Limits Name
+  {eae46718-2f2b-43b2-b1bc-a34120ab4368}; !- Default Day Schedule Name
+
+OS:Schedule:Day,
+  {eae46718-2f2b-43b2-b1bc-a34120ab4368}, !- Handle
+  Schedule Day 34,                        !- Name
+  {69e5f480-78a4-49f5-aba6-4b04dbe1164a}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  59.9999961853027;                       !- Value Until Time 1
+
 OS:Site:GroundTemperature:BuildingSurface,
-  {422d69e9-35b3-4700-a57d-1467576364fa}, !- Handle
+  {bab0e9a5-236d-4799-a892-72d9ae37bfa0}, !- Handle
   2.47,                                   !- January Ground Temperature {C}
   4.08,                                   !- February Ground Temperature {C}
   7.22,                                   !- March Ground Temperature {C}
@@ -26073,56 +26095,56 @@ OS:Site:GroundTemperature:BuildingSurface,
   3.24;                                   !- December Ground Temperature {C}
 
 OS:Output:Variable,
-  {0a650441-0571-4f0e-833a-a1ba0d8f15a4}, !- Handle
+  {7fbdae94-dbe0-4bbc-9874-7385b18e57b8}, !- Handle
   Output Variable 1,                      !- Name
   *,                                      !- Key Value
   Heating Coil Gas Energy ,               !- Variable Name
   hourly;                                 !- Reporting Frequency
 
 OS:Output:Variable,
-  {e711f641-026f-4966-a04d-2b096571226c}, !- Handle
+  {f77bf84b-50d7-4c2b-a2ff-5717d86e1a07}, !- Handle
   Output Variable 2,                      !- Name
   *,                                      !- Key Value
   Facility Total Purchased Electric Energy, !- Variable Name
   hourly;                                 !- Reporting Frequency
 
 OS:Output:Variable,
-  {200ed44e-948b-4617-974d-12faaa72950e}, !- Handle
+  {fdb43a69-bc48-4f3e-b650-c108ce90e506}, !- Handle
   Output Variable 3,                      !- Name
   *,                                      !- Key Value
   Facility Total Purchased Electric Energy, !- Variable Name
   runperiod;                              !- Reporting Frequency
 
 OS:Output:Variable,
-  {45a14fd0-fafe-491e-90d0-0a4566486600}, !- Handle
+  {963ec1c9-586e-4864-930b-60cd06687760}, !- Handle
   Output Variable 4,                      !- Name
   *,                                      !- Key Value
   Heating Coil Gas Energy ,               !- Variable Name
   runperiod;                              !- Reporting Frequency
 
 OS:Output:Variable,
-  {4c2590c6-2d04-43de-a59a-7c2bbd577839}, !- Handle
+  {01b8d469-ed39-4ca4-9e46-05f9a14d198b}, !- Handle
   Output Variable 5,                      !- Name
   *,                                      !- Key Value
   Zone Mean Air Temperature,              !- Variable Name
   hourly;                                 !- Reporting Frequency
 
 OS:Output:Variable,
-  {86523eeb-7841-46f7-9630-db9d1ec2534d}, !- Handle
+  {1d3f50d4-bbad-468b-b2bf-51c7020d5b3e}, !- Handle
   Output Variable 6,                      !- Name
   *,                                      !- Key Value
   Zone Air Relative Humidity,             !- Variable Name
   hourly;                                 !- Reporting Frequency
 
 OS:Output:Variable,
-  {2a3831f1-4760-4b95-8175-3c6f4414fc22}, !- Handle
+  {4ef50102-0b00-4699-a4a0-4c51feed9203}, !- Handle
   Output Variable 7,                      !- Name
   *,                                      !- Key Value
   Other Equipment Total Heating Rate,     !- Variable Name
   hourly;                                 !- Reporting Frequency
 
 OS:Output:Variable,
-  {28e2dc63-9e20-49fe-b12c-28076c7d3555}, !- Handle
+  {1292e470-202d-4ed9-bc93-f916f7045ab2}, !- Handle
   Output Variable 8,                      !- Name
   *,                                      !- Key Value
   Other Equipment Latent Gain Rate,       !- Variable Name

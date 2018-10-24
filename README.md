@@ -29,5 +29,12 @@ So the problem seems to be with encoding the data. It seems that becaus of the l
 One option is to modify system language in the command console. 
 Another option that seems to work is to convert the .csv file generated from excel with NotePad++.
 
-With working sensible and latent loads we can see an augmentation in cooling energy. 1.4142e+11 vs 2.26811e+11 now.
+With working sensible and latent loads we can see an augmentation in cooling energy. 1.4142e+11 vs 2.26811e+11 now. Less than rwo times higher.
+Heanting was also higher 2.0456e+11 vs 7.31179e+11. So more than 3 times higher
 We can also see tha RH is almost always at 100% sinc we don't have any control on humidity.
+
+##Humidity control
+Next step is to try to control humidity with the RTPU, at the same time as controling temperature.
+If everything works fine, I could redoo the plants load calculation for a 80% RH control.
+
+Trying to run simply with humid and dehumid schedule.
