@@ -26079,8 +26079,53 @@ OS:Schedule:Day,
   0,                                      !- Minute 1
   59.9999961853027;                       !- Value Until Time 1
 
+OS:Curve:Biquadratic,
+  {cf990d55-7a28-45c9-91a8-8e5c2ace11a0}, !- Handle
+  Dehumidifier Water Removal Curve,       !- Name
+  -2.72487866408,                         !- Coefficient1 Constant
+  0.100711983591,                         !- Coefficient2 x
+  -0.000990538285,                        !- Coefficient3 x**2
+  0.050053043874,                         !- Coefficient4 y
+  -0.000203629282,                        !- Coefficient5 y**2
+  -0.000341750531,                        !- Coefficient6 x*y
+  21,                                     !- Minimum Value of x
+  32.22,                                  !- Maximum Value of x
+  40,                                     !- Minimum Value of y
+  80;                                     !- Maximum Value of y
+
+OS:Curve:Biquadratic,
+  {6264d0f0-628f-4476-b4fd-6ecd294e568a}, !- Handle
+  Dehumidifier Energy Factor Curve,       !- Name
+  -2.388319068955,                        !- Coefficient1 Constant
+  0.093047739452,                         !- Coefficient2 x
+  -0.001369700327,                        !- Coefficient3 x**2
+  0.066533716758,                         !- Coefficient4 y
+  -0.000343198063,                        !- Coefficient5 y**2
+  -0.000562490295,                        !- Coefficient6 x*y
+  21,                                     !- Minimum Value of x
+  32.22,                                  !- Maximum Value of x
+  40,                                     !- Minimum Value of y
+  80;                                     !- Maximum Value of y
+
+OS:Curve:Quadratic,
+  {733128ad-657e-4af1-a73f-e2afdd4236e3}, !- Handle
+  Dehumidifier Part Load Curve,           !- Name
+  0.95,                                   !- Coefficient1 Constant
+  0.05,                                   !- Coefficient2 x
+  0,                                      !- Coefficient3 x**2
+  0,                                      !- Minimum Value of x
+  1;                                      !- Maximum Value of x
+
+OS:SetpointManager:MultiZone:Humidity:Maximum,
+  {57d2f33c-39e1-4975-9852-1a4aa37d40c7}, !- Handle
+  Setpoint Manager Multi Zone Humidity Maximum, !- Name
+  MaximumHumidityRatio,                   !- Control Variable
+  0.008,                                  !- Minimum Setpoint Humidity Ratio {kgWater/kgDryAir}
+  0.0105,                                 !- Maximum Setpoint Humidity Ratio {kgWater/kgDryAir}
+  {9598d96d-258c-41a0-894f-64d155763087}; !- Setpoint Node or NodeList Name
+
 OS:Site:GroundTemperature:BuildingSurface,
-  {bab0e9a5-236d-4799-a892-72d9ae37bfa0}, !- Handle
+  {24b6cee9-ebc3-4538-b5f3-890166e3c738}, !- Handle
   2.47,                                   !- January Ground Temperature {C}
   4.08,                                   !- February Ground Temperature {C}
   7.22,                                   !- March Ground Temperature {C}
@@ -26095,56 +26140,56 @@ OS:Site:GroundTemperature:BuildingSurface,
   3.24;                                   !- December Ground Temperature {C}
 
 OS:Output:Variable,
-  {7fbdae94-dbe0-4bbc-9874-7385b18e57b8}, !- Handle
+  {10e7847b-1dc8-4fc6-aacf-b817e9b7368d}, !- Handle
   Output Variable 1,                      !- Name
   *,                                      !- Key Value
   Heating Coil Gas Energy ,               !- Variable Name
   hourly;                                 !- Reporting Frequency
 
 OS:Output:Variable,
-  {f77bf84b-50d7-4c2b-a2ff-5717d86e1a07}, !- Handle
+  {9e3038a9-5c4d-4dbc-9363-e41f2f5faae2}, !- Handle
   Output Variable 2,                      !- Name
   *,                                      !- Key Value
   Facility Total Purchased Electric Energy, !- Variable Name
   hourly;                                 !- Reporting Frequency
 
 OS:Output:Variable,
-  {fdb43a69-bc48-4f3e-b650-c108ce90e506}, !- Handle
+  {c7ebb594-fe26-4355-94bf-ba990147829f}, !- Handle
   Output Variable 3,                      !- Name
   *,                                      !- Key Value
   Facility Total Purchased Electric Energy, !- Variable Name
   runperiod;                              !- Reporting Frequency
 
 OS:Output:Variable,
-  {963ec1c9-586e-4864-930b-60cd06687760}, !- Handle
+  {8d218363-7359-4ccd-8c9f-e8c8fbd7e051}, !- Handle
   Output Variable 4,                      !- Name
   *,                                      !- Key Value
   Heating Coil Gas Energy ,               !- Variable Name
   runperiod;                              !- Reporting Frequency
 
 OS:Output:Variable,
-  {01b8d469-ed39-4ca4-9e46-05f9a14d198b}, !- Handle
+  {e9025118-b9a3-42fd-97ec-5fd06765840a}, !- Handle
   Output Variable 5,                      !- Name
   *,                                      !- Key Value
   Zone Mean Air Temperature,              !- Variable Name
   hourly;                                 !- Reporting Frequency
 
 OS:Output:Variable,
-  {1d3f50d4-bbad-468b-b2bf-51c7020d5b3e}, !- Handle
+  {b8417dc0-50a6-4396-84b9-594a5613bd43}, !- Handle
   Output Variable 6,                      !- Name
   *,                                      !- Key Value
   Zone Air Relative Humidity,             !- Variable Name
   hourly;                                 !- Reporting Frequency
 
 OS:Output:Variable,
-  {4ef50102-0b00-4699-a4a0-4c51feed9203}, !- Handle
+  {24c06e69-c38c-4381-b106-6e68d64a61ac}, !- Handle
   Output Variable 7,                      !- Name
   *,                                      !- Key Value
   Other Equipment Total Heating Rate,     !- Variable Name
   hourly;                                 !- Reporting Frequency
 
 OS:Output:Variable,
-  {1292e470-202d-4ed9-bc93-f916f7045ab2}, !- Handle
+  {c5ecfb9f-ffe8-4559-94eb-51a11bf47dc1}, !- Handle
   Output Variable 8,                      !- Name
   *,                                      !- Key Value
   Other Equipment Latent Gain Rate,       !- Variable Name

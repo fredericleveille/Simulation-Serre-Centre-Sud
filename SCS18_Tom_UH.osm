@@ -26079,3 +26079,48 @@ OS:Schedule:Day,
   0,                                      !- Minute 1
   59.9999961853027;                       !- Value Until Time 1
 
+OS:Curve:Biquadratic,
+  {cf990d55-7a28-45c9-91a8-8e5c2ace11a0}, !- Handle
+  Dehumidifier Water Removal Curve,       !- Name
+  -2.72487866408,                         !- Coefficient1 Constant
+  0.100711983591,                         !- Coefficient2 x
+  -0.000990538285,                        !- Coefficient3 x**2
+  0.050053043874,                         !- Coefficient4 y
+  -0.000203629282,                        !- Coefficient5 y**2
+  -0.000341750531,                        !- Coefficient6 x*y
+  21,                                     !- Minimum Value of x
+  32.22,                                  !- Maximum Value of x
+  40,                                     !- Minimum Value of y
+  80;                                     !- Maximum Value of y
+
+OS:Curve:Biquadratic,
+  {6264d0f0-628f-4476-b4fd-6ecd294e568a}, !- Handle
+  Dehumidifier Energy Factor Curve,       !- Name
+  -2.388319068955,                        !- Coefficient1 Constant
+  0.093047739452,                         !- Coefficient2 x
+  -0.001369700327,                        !- Coefficient3 x**2
+  0.066533716758,                         !- Coefficient4 y
+  -0.000343198063,                        !- Coefficient5 y**2
+  -0.000562490295,                        !- Coefficient6 x*y
+  21,                                     !- Minimum Value of x
+  32.22,                                  !- Maximum Value of x
+  40,                                     !- Minimum Value of y
+  80;                                     !- Maximum Value of y
+
+OS:Curve:Quadratic,
+  {733128ad-657e-4af1-a73f-e2afdd4236e3}, !- Handle
+  Dehumidifier Part Load Curve,           !- Name
+  0.95,                                   !- Coefficient1 Constant
+  0.05,                                   !- Coefficient2 x
+  0,                                      !- Coefficient3 x**2
+  0,                                      !- Minimum Value of x
+  1;                                      !- Maximum Value of x
+
+OS:SetpointManager:MultiZone:Humidity:Maximum,
+  {57d2f33c-39e1-4975-9852-1a4aa37d40c7}, !- Handle
+  Setpoint Manager Multi Zone Humidity Maximum, !- Name
+  MaximumHumidityRatio,                   !- Control Variable
+  0.008,                                  !- Minimum Setpoint Humidity Ratio {kgWater/kgDryAir}
+  0.0105,                                 !- Maximum Setpoint Humidity Ratio {kgWater/kgDryAir}
+  {9598d96d-258c-41a0-894f-64d155763087}; !- Setpoint Node or NodeList Name
+
