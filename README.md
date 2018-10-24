@@ -40,3 +40,8 @@ If everything works fine, I could redoo the plants load calculation for a 80% RH
 Trying to run simply with humid and dehumid schedule.
 No impact on humidity crontol. Seems I need sensor or control or something like that. 
 Trying to add max humidity sensor at the output of the cooling coil.
+
+I was able to control approximatly well the RH with a DX dehumidifier sized for nearly max capacity.
+Now remains only to plot system different component consumption Electric (cooling and dehum) and gaz (heating)
+
+Problem to investigate: why do I have so much heating during summer...

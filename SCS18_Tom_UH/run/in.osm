@@ -6178,13 +6178,15 @@ OS:PortList,
   {fc599429-902a-427f-9f2b-27e07e820e8e}, !- Name
   {29044e95-f4e9-40d1-aee9-87ccdaf7531b}, !- HVAC Component
   {2c1f7115-5465-4d4b-ba5d-50b325cdccdc}, !- Port 1
-  {8b8bb127-5440-4065-a8ba-061da0391762}; !- Port 2
+  {8b8bb127-5440-4065-a8ba-061da0391762}, !- Port 2
+  {96cec4f6-95fe-4ddb-8f94-f6e17d3f877d}; !- Port 3
 
 OS:PortList,
   {118a2ea4-61ca-45d3-8fdf-ac54777b02cc}, !- Handle
   {54168cb1-d1a9-4509-98d7-274f45a89498}, !- Name
   {29044e95-f4e9-40d1-aee9-87ccdaf7531b}, !- HVAC Component
-  {74a60bfb-7443-4157-8668-44d52785f5f6}; !- Port 1
+  {74a60bfb-7443-4157-8668-44d52785f5f6}, !- Port 1
+  {a4712e49-374b-47a3-af86-b4531d96c992}; !- Port 2
 
 OS:Sizing:Zone,
   {0741a7ef-b266-4cc8-8ac5-77f8ca72c36c}, !- Handle
@@ -6228,7 +6230,10 @@ OS:ZoneHVAC:EquipmentList,
   2,                                      !- Zone Equipment Heating or No-Load Sequence 2
   {934f848d-ca7b-4edb-b2fb-d277d933d127}, !- Zone Equipment 3
   3,                                      !- Zone Equipment Cooling Sequence 3
-  3;                                      !- Zone Equipment Heating or No-Load Sequence 3
+  3,                                      !- Zone Equipment Heating or No-Load Sequence 3
+  {776bd1e1-abba-40dd-9652-f80757158299}, !- Zone Equipment 4
+  4,                                      !- Zone Equipment Cooling Sequence 4
+  4;                                      !- Zone Equipment Heating or No-Load Sequence 4
 
 OS:Rendering:Color,
   {b8b73690-c95f-40da-97fc-96dc9637b211}, !- Handle
@@ -7812,7 +7817,7 @@ OS:WeatherFile,
   -73.75,                                 !- Longitude {deg}
   -5,                                     !- Time Zone {hr}
   36,                                     !- Elevation {m}
-  file:///C:/Users/levei/AppData/Local/Temp/OpenStudioApp.u10272/resources/files/CAN_PQ_Montreal.Intl.AP.716270_CWEC.epw, !- Url
+  file:///C:/Users/levei/AppData/Local/Temp/OpenStudioApp.v16660/resources/files/CAN_PQ_Montreal.Intl.AP.716270_CWEC.epw, !- Url
   3C3F39E2;                               !- Checksum
 
 OS:Schedule:Ruleset,
@@ -26124,8 +26129,80 @@ OS:SetpointManager:MultiZone:Humidity:Maximum,
   0.0105,                                 !- Maximum Setpoint Humidity Ratio {kgWater/kgDryAir}
   {9598d96d-258c-41a0-894f-64d155763087}; !- Setpoint Node or NodeList Name
 
+OS:ZoneHVAC:Dehumidifier:DX,
+  {776bd1e1-abba-40dd-9652-f80757158299}, !- Handle
+  Zone HVAC Dehumidifier,                 !- Name
+  {ab9930e0-d1a3-4ae5-b8b6-b8662c96cb85}, !- Availability Schedule Name
+  {807a5598-6052-45f9-a50a-14b94b748a1d}, !- Air Inlet Node Name
+  {526100a4-c803-4fd4-8989-d1cf7f0fb07c}, !- Air Outlet Node Name
+  1000,                                   !- Rated Water Removal {L/day}
+  3.412,                                  !- Rated Energy Factor {L/kWh}
+  0.12036,                                !- Rated Air Flow Rate {m3/s}
+  {cf990d55-7a28-45c9-91a8-8e5c2ace11a0}, !- Water Removal Curve Name
+  {6264d0f0-628f-4476-b4fd-6ecd294e568a}, !- Energy Factor Curve Name
+  {733128ad-657e-4af1-a73f-e2afdd4236e3}, !- Part Load Fraction Correlation Curve Name
+  10,                                     !- Minimum Dry-Bulb Temperature for Dehumidifier Operation {C}
+  32,                                     !- Maximum Dry-Bulb Temperature for Dehumidifier Operation {C}
+  0;                                      !- Off-Cycle Parasitic Electric Load {W}
+
+OS:Node,
+  {47ab1a2e-bd9d-40b1-846c-afd49dcba690}, !- Handle
+  Node 14,                                !- Name
+  {a4712e49-374b-47a3-af86-b4531d96c992}, !- Inlet Port
+  {807a5598-6052-45f9-a50a-14b94b748a1d}; !- Outlet Port
+
+OS:Connection,
+  {a4712e49-374b-47a3-af86-b4531d96c992}, !- Handle
+  {2c4fe276-5928-4f81-9152-1186d2e114a4}, !- Name
+  {118a2ea4-61ca-45d3-8fdf-ac54777b02cc}, !- Source Object
+  4,                                      !- Outlet Port
+  {47ab1a2e-bd9d-40b1-846c-afd49dcba690}, !- Target Object
+  2;                                      !- Inlet Port
+
+OS:Connection,
+  {807a5598-6052-45f9-a50a-14b94b748a1d}, !- Handle
+  {822cd98c-48ce-494c-acaa-eee4955e2b67}, !- Name
+  {47ab1a2e-bd9d-40b1-846c-afd49dcba690}, !- Source Object
+  3,                                      !- Outlet Port
+  {776bd1e1-abba-40dd-9652-f80757158299}, !- Target Object
+  3;                                      !- Inlet Port
+
+OS:Node,
+  {28f78a85-f147-47f7-af32-a099a7f52b92}, !- Handle
+  Node 15,                                !- Name
+  {526100a4-c803-4fd4-8989-d1cf7f0fb07c}, !- Inlet Port
+  {96cec4f6-95fe-4ddb-8f94-f6e17d3f877d}; !- Outlet Port
+
+OS:Connection,
+  {96cec4f6-95fe-4ddb-8f94-f6e17d3f877d}, !- Handle
+  {5db9da18-24ed-4e44-8a0f-28cc4db69795}, !- Name
+  {28f78a85-f147-47f7-af32-a099a7f52b92}, !- Source Object
+  3,                                      !- Outlet Port
+  {081e33de-3779-4f0b-aa73-a50924845057}, !- Target Object
+  5;                                      !- Inlet Port
+
+OS:Connection,
+  {526100a4-c803-4fd4-8989-d1cf7f0fb07c}, !- Handle
+  {26f1734c-a00f-4763-9ba6-a26b36bc7683}, !- Name
+  {776bd1e1-abba-40dd-9652-f80757158299}, !- Source Object
+  4,                                      !- Outlet Port
+  {28f78a85-f147-47f7-af32-a099a7f52b92}, !- Target Object
+  2;                                      !- Inlet Port
+
+OS:EnergyManagementSystem:Sensor,
+  {e9ac26bb-1464-40dd-871c-0a5bc931ae9f}, !- Handle
+  Energy_Management_System_Sensor_1,      !- Name
+  {776bd1e1-abba-40dd-9652-f80757158299}, !- Output Variable or Output Meter Index Key Name
+  Zone Dehumidifier Sensible Heating Rate; !- Output Variable or Output Meter Name
+
+OS:EnergyManagementSystem:Sensor,
+  {19fadbb3-6b48-4b9f-840e-332d4e955165}, !- Handle
+  Energy_Management_System_Sensor_2,      !- Name
+  {776bd1e1-abba-40dd-9652-f80757158299}, !- Output Variable or Output Meter Index Key Name
+  Zone Dehumidifier Electric Power;       !- Output Variable or Output Meter Name
+
 OS:Site:GroundTemperature:BuildingSurface,
-  {24b6cee9-ebc3-4538-b5f3-890166e3c738}, !- Handle
+  {612a4754-c8be-498e-bde9-c3b428e1b7a2}, !- Handle
   2.47,                                   !- January Ground Temperature {C}
   4.08,                                   !- February Ground Temperature {C}
   7.22,                                   !- March Ground Temperature {C}
@@ -26140,56 +26217,56 @@ OS:Site:GroundTemperature:BuildingSurface,
   3.24;                                   !- December Ground Temperature {C}
 
 OS:Output:Variable,
-  {10e7847b-1dc8-4fc6-aacf-b817e9b7368d}, !- Handle
+  {3a458fdb-7ef1-4c49-98dc-b3d70f09c555}, !- Handle
   Output Variable 1,                      !- Name
   *,                                      !- Key Value
   Heating Coil Gas Energy ,               !- Variable Name
   hourly;                                 !- Reporting Frequency
 
 OS:Output:Variable,
-  {9e3038a9-5c4d-4dbc-9363-e41f2f5faae2}, !- Handle
+  {fd993838-b3c8-411a-86e3-8bc3e29b665b}, !- Handle
   Output Variable 2,                      !- Name
   *,                                      !- Key Value
   Facility Total Purchased Electric Energy, !- Variable Name
   hourly;                                 !- Reporting Frequency
 
 OS:Output:Variable,
-  {c7ebb594-fe26-4355-94bf-ba990147829f}, !- Handle
+  {05d5107c-585a-4fe5-b894-894cdf649f0b}, !- Handle
   Output Variable 3,                      !- Name
   *,                                      !- Key Value
   Facility Total Purchased Electric Energy, !- Variable Name
   runperiod;                              !- Reporting Frequency
 
 OS:Output:Variable,
-  {8d218363-7359-4ccd-8c9f-e8c8fbd7e051}, !- Handle
+  {8349c5b4-2c3b-4045-a9df-f3437c8356a4}, !- Handle
   Output Variable 4,                      !- Name
   *,                                      !- Key Value
   Heating Coil Gas Energy ,               !- Variable Name
   runperiod;                              !- Reporting Frequency
 
 OS:Output:Variable,
-  {e9025118-b9a3-42fd-97ec-5fd06765840a}, !- Handle
+  {0c2e459a-48e4-47f3-8e4c-ffda6320c3f7}, !- Handle
   Output Variable 5,                      !- Name
   *,                                      !- Key Value
   Zone Mean Air Temperature,              !- Variable Name
   hourly;                                 !- Reporting Frequency
 
 OS:Output:Variable,
-  {b8417dc0-50a6-4396-84b9-594a5613bd43}, !- Handle
+  {7ccd5d97-6b77-4dfd-beff-4c46c554ac3b}, !- Handle
   Output Variable 6,                      !- Name
   *,                                      !- Key Value
   Zone Air Relative Humidity,             !- Variable Name
   hourly;                                 !- Reporting Frequency
 
 OS:Output:Variable,
-  {24c06e69-c38c-4381-b106-6e68d64a61ac}, !- Handle
+  {433b989f-2684-4abb-87bc-5451a45c1316}, !- Handle
   Output Variable 7,                      !- Name
   *,                                      !- Key Value
   Other Equipment Total Heating Rate,     !- Variable Name
   hourly;                                 !- Reporting Frequency
 
 OS:Output:Variable,
-  {c5ecfb9f-ffe8-4559-94eb-51a11bf47dc1}, !- Handle
+  {d198034f-479a-4290-b278-4a2f170d9636}, !- Handle
   Output Variable 8,                      !- Name
   *,                                      !- Key Value
   Other Equipment Latent Gain Rate,       !- Variable Name

@@ -1,4 +1,4 @@
-! Program Version,EnergyPlus, Version 8.9.0-eba93e8e1b, YMD=2018.10.24 10:46,
+! Program Version,EnergyPlus, Version 8.9.0-eba93e8e1b, YMD=2018.10.24 14:17,
 ! Output:Variable Objects (applicable to this run)
 Output:Variable,*,Site Outdoor Air Drybulb Temperature,hourly; !- Zone Average [C]
 Output:Variable,*,Site Outdoor Air Dewpoint Temperature,hourly; !- Zone Average [C]
@@ -391,6 +391,17 @@ Output:Variable,*,Zone Air Terminal Sensible Cooling Rate,hourly; !- HVAC Sum [W
 Output:Variable,*,Zone Air Terminal VAV Damper Position,hourly; !- HVAC Average []
 Output:Variable,*,Zone Air Terminal Minimum Air Flow Fraction,hourly; !- HVAC Average []
 Output:Variable,*,Zone Air Terminal Outdoor Air Volume Flow Rate,hourly; !- HVAC Average [m3/s]
+Output:Variable,*,Zone Dehumidifier Sensible Heating Rate,hourly; !- HVAC Average [W]
+Output:Variable,*,Zone Dehumidifier Sensible Heating Energy,hourly; !- HVAC Sum [J]
+Output:Variable,*,Zone Dehumidifier Removed Water Mass Flow Rate,hourly; !- HVAC Average [kg/s]
+Output:Variable,*,Zone Dehumidifier Removed Water Mass,hourly; !- HVAC Sum [kg]
+Output:Variable,*,Zone Dehumidifier Electric Power,hourly; !- HVAC Average [W]
+Output:Variable,*,Zone Dehumidifier Electric Energy,hourly; !- HVAC Sum [J]
+Output:Variable,*,Zone Dehumidifier Off Cycle Parasitic Electric Power,hourly; !- HVAC Average [W]
+Output:Variable,*,Zone Dehumidifier Off Cycle Parasitic Electric Energy,hourly; !- HVAC Sum [J]
+Output:Variable,*,Zone Dehumidifier Part Load Ratio,hourly; !- HVAC Average []
+Output:Variable,*,Zone Dehumidifier Runtime Fraction,hourly; !- HVAC Average []
+Output:Variable,*,Zone Dehumidifier Outlet Air Temperature,hourly; !- HVAC Average [C]
 Output:Variable,*,Availability Manager Scheduled Control Status,hourly; !- HVAC Average []
 Output:Variable,*,Air System Simulation Cycle On Off Status,hourly; !- HVAC Average []
 Output:Variable,*,Air System Simulation Maximum Iteration Count,hourly; !- HVAC Sum []
