@@ -1,4 +1,4 @@
-Program Version,EnergyPlus, Version 8.9.0-eba93e8e1b, YMD=2018.10.24 09:59,
+Program Version,EnergyPlus, Version 8.9.0-eba93e8e1b, YMD=2018.10.24 10:08,
    ************* Beginning Zone Sizing Calculations
    ** Warning ** Site:GroundTemperature:BuildingSurface: Some values fall outside the range of 15-25C.
    **   ~~~   ** These values may be inappropriate.  Please consult the Input Output Reference for more details.
@@ -11,9 +11,13 @@ Program Version,EnergyPlus, Version 8.9.0-eba93e8e1b, YMD=2018.10.24 09:59,
    ** Warning ** GetSurfaceData: WindowProperty:ShadingControl: "SHADING CONTROL 1" is not referenced by any window.
    ** Warning ** CheckUsedConstructions: There are 26 nominally unused constructions in input.
    **   ~~~   ** For explicit details on each unused construction, use Output:Diagnostics,DisplayExtraWarnings;
+   ** Warning ** Calculated design cooling load for zone=THERMAL ZONE 1 is zero.
+   **   ~~~   ** Check Sizing:Zone and ZoneControl:Thermostat inputs.
    ************* Beginning System Sizing Calculations
    ** Warning ** Since Zone Minimum Air Flow Input Method = CONSTANT, input for Fixed Minimum Air Flow Rate will be ignored.
    **   ~~~   ** Occurs in AirTerminal:SingleDuct:VAV:Reheat = VAV ELEC RHT
+   ** Warning ** ManageSizing: Calculated Cooling Design Air Flow Rate for System=PACKAGED ROOFTOP VAV WITH REHEAT is zero.
+   **   ~~~   ** Check Sizing:Zone and ZoneControl:Thermostat inputs.
    ** Warning ** Output:Meter: invalid Key Name="DISTRICTCOOLING:FACILITY" - not found.
    ** Warning ** Output:Meter: invalid Key Name="DISTRICTHEATING:FACILITY" - not found.
    ** Warning ** Output:Meter:MeterFileOnly requested for "Electricity:Facility" (TimeStep), already on "Output:Meter". Will report to both eplusout.eso and eplusout.mtr
@@ -49,5 +53,5 @@ Program Version,EnergyPlus, Version 8.9.0-eba93e8e1b, YMD=2018.10.24 09:59,
    ************* ..object. You may remove the constructions indicated (when you use the DisplayExtraWarnings option).
    *************
    ************* EnergyPlus Warmup Error Summary. During Warmup: 0 Warning; 0 Severe Errors.
-   ************* EnergyPlus Sizing Error Summary. During Sizing: 10 Warning; 0 Severe Errors.
-   ************* EnergyPlus Completed Successfully-- 18 Warning; 0 Severe Errors; Elapsed Time=00hr 00min 18.75sec
+   ************* EnergyPlus Sizing Error Summary. During Sizing: 12 Warning; 0 Severe Errors.
+   ************* EnergyPlus Completed Successfully-- 20 Warning; 0 Severe Errors; Elapsed Time=00hr 00min 16.71sec

@@ -8494,7 +8494,8 @@ OS:OtherEquipment:Definition,
   EquipmentLevel,                         !- Design Level Calculation Method
   49529,                                  !- Design Level {W}
   ,                                       !- Watts per Space Floor Area {W/m2}
-  ;                                       !- Watts per Person {W/Person}
+  ,                                       !- Watts per Person {W/Person}
+  1;                                      !- Fraction Latent
 
 OS:OtherEquipment,
   {72708cf3-a24c-4b31-88a4-b602e4830474}, !- Handle
@@ -26057,7 +26058,7 @@ OS:Schedule:FixedInterval,
   0.370539897;                            !- Value 8760
 
 OS:Site:GroundTemperature:BuildingSurface,
-  {f07033af-fa3b-4923-a3c5-088d7ca7b231}, !- Handle
+  {422d69e9-35b3-4700-a57d-1467576364fa}, !- Handle
   2.47,                                   !- January Ground Temperature {C}
   4.08,                                   !- February Ground Temperature {C}
   7.22,                                   !- March Ground Temperature {C}
@@ -26072,44 +26073,58 @@ OS:Site:GroundTemperature:BuildingSurface,
   3.24;                                   !- December Ground Temperature {C}
 
 OS:Output:Variable,
-  {cb966ec8-1949-4929-afa4-d55181199ef5}, !- Handle
+  {0a650441-0571-4f0e-833a-a1ba0d8f15a4}, !- Handle
   Output Variable 1,                      !- Name
   *,                                      !- Key Value
   Heating Coil Gas Energy ,               !- Variable Name
   hourly;                                 !- Reporting Frequency
 
 OS:Output:Variable,
-  {5952dfec-3171-4584-8f54-6235a9022a57}, !- Handle
+  {e711f641-026f-4966-a04d-2b096571226c}, !- Handle
   Output Variable 2,                      !- Name
   *,                                      !- Key Value
   Facility Total Purchased Electric Energy, !- Variable Name
   hourly;                                 !- Reporting Frequency
 
 OS:Output:Variable,
-  {044715f5-b5cc-4577-8d49-3e83011828ab}, !- Handle
+  {200ed44e-948b-4617-974d-12faaa72950e}, !- Handle
   Output Variable 3,                      !- Name
   *,                                      !- Key Value
   Facility Total Purchased Electric Energy, !- Variable Name
   runperiod;                              !- Reporting Frequency
 
 OS:Output:Variable,
-  {0ef1ec90-780f-4711-aa54-1cd2eb4f140c}, !- Handle
+  {45a14fd0-fafe-491e-90d0-0a4566486600}, !- Handle
   Output Variable 4,                      !- Name
   *,                                      !- Key Value
   Heating Coil Gas Energy ,               !- Variable Name
   runperiod;                              !- Reporting Frequency
 
 OS:Output:Variable,
-  {cf7a0c9f-23d3-43a2-b9fa-837903ae698c}, !- Handle
+  {4c2590c6-2d04-43de-a59a-7c2bbd577839}, !- Handle
   Output Variable 5,                      !- Name
   *,                                      !- Key Value
   Zone Mean Air Temperature,              !- Variable Name
   hourly;                                 !- Reporting Frequency
 
 OS:Output:Variable,
-  {ed97b9d5-8973-4ebc-ac7a-b8294960d3c3}, !- Handle
+  {86523eeb-7841-46f7-9630-db9d1ec2534d}, !- Handle
   Output Variable 6,                      !- Name
   *,                                      !- Key Value
   Zone Air Relative Humidity,             !- Variable Name
+  hourly;                                 !- Reporting Frequency
+
+OS:Output:Variable,
+  {2a3831f1-4760-4b95-8175-3c6f4414fc22}, !- Handle
+  Output Variable 7,                      !- Name
+  *,                                      !- Key Value
+  Other Equipment Total Heating Rate,     !- Variable Name
+  hourly;                                 !- Reporting Frequency
+
+OS:Output:Variable,
+  {28e2dc63-9e20-49fe-b12c-28076c7d3555}, !- Handle
+  Output Variable 8,                      !- Name
+  *,                                      !- Key Value
+  Other Equipment Latent Gain Rate,       !- Variable Name
   hourly;                                 !- Reporting Frequency
 

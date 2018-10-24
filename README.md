@@ -29,3 +29,5 @@ So the problem seems to be with encoding the data. It seems that becaus of the l
 One option is to modify system language in the command console. 
 Another option that seems to work is to convert the .csv file generated from excel with NotePad++.
 
+With working sensible and latent loads we can see an augmentation in cooling energy. 1.4142e+11 vs 2.26811e+11 now.
+We can also see tha RH is almost always at 100% sinc we don't have any control on humidity.
