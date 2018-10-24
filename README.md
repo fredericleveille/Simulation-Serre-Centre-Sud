@@ -23,3 +23,9 @@ First iteration for plant loads was made with 70% RH even tho RH max was 67% wit
 Simulation will be run to see if with those latent loads, RH would rise to values around 70% (without humidity control)
 Two .csv hourly schedule were created with the fractional value calculated within the .xlsx file.
 
+The add interval measures fail when I try to run it with "uniteless" units.
+I'll try to run units in watts and force it as a schedule...But I still got the same problem...
+So the problem seems to be with encoding the data. It seems that becaus of the language of my system (french) I can't encode correctly in US.UTF-8.
+One option is to modify system language in the command console. 
+Another option that seems to work is to convert the .csv file generated from excel with NotePad++.
+
