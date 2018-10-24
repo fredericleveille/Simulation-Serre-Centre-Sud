@@ -8494,7 +8494,8 @@ OS:OtherEquipment:Definition,
   EquipmentLevel,                         !- Design Level Calculation Method
   49529,                                  !- Design Level {W}
   ,                                       !- Watts per Space Floor Area {W/m2}
-  ;                                       !- Watts per Person {W/Person}
+  ,                                       !- Watts per Person {W/Person}
+  1;                                      !- Fraction Latent
 
 OS:OtherEquipment,
   {72708cf3-a24c-4b31-88a4-b602e4830474}, !- Handle

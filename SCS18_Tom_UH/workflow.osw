@@ -77,8 +77,26 @@
          "measure_dir_name" : "AddOutputVariable",
          "modeler_description" : "The measure just passes in the string and does not validate that it is a proper variable name. It is up to the user to know this or to look at the .rdd file from a previous simulation run.",
          "name" : "Add Zone Air Relative Humidity"
+      },
+      {
+         "arguments" : {
+            "variable_name" : "Other Equipment Total Heating Rate"
+         },
+         "description" : "This measure adds an output variable at the requested reporting frequency.",
+         "measure_dir_name" : "AddOutputVariable",
+         "modeler_description" : "The measure just passes in the string and does not validate that it is a proper variable name. It is up to the user to know this or to look at the .rdd file from a previous simulation run.",
+         "name" : "Add Other Equipment Total Heating Rate"
+      },
+      {
+         "arguments" : {
+            "variable_name" : "Other Equipment Latent Gain Rate"
+         },
+         "description" : "This measure adds an output variable at the requested reporting frequency.",
+         "measure_dir_name" : "AddOutputVariable",
+         "modeler_description" : "The measure just passes in the string and does not validate that it is a proper variable name. It is up to the user to know this or to look at the .rdd file from a previous simulation run.",
+         "name" : "Add Other Equipment Latent Gain Rate"
       }
    ],
-   "updated_at" : "20181024T130747Z",
+   "updated_at" : "20181024T140517Z",
    "weather_file" : "CAN_PQ_Montreal.Intl.AP.716270_CWEC.epw"
 }
