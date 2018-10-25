@@ -8429,7 +8429,7 @@ OS:OtherEquipment:Definition,
   {98a49a5a-8b92-4df0-84f7-e2d52284581b}, !- Handle
   Plants Sensible Load,                   !- Name
   EquipmentLevel,                         !- Design Level Calculation Method
-  -41355,                                 !- Design Level {W}
+  -16542,                                 !- Design Level {W}
   ,                                       !- Watts per Space Floor Area {W/m2}
   ;                                       !- Watts per Person {W/Person}
 
@@ -8437,7 +8437,7 @@ OS:OtherEquipment:Definition,
   {adc83cbf-acfd-4e98-8b4a-442fecb85ccd}, !- Handle
   Plants Latent Load,                     !- Name
   EquipmentLevel,                         !- Design Level Calculation Method
-  49529,                                  !- Design Level {W}
+  19812,                                  !- Design Level {W}
   ,                                       !- Watts per Space Floor Area {W/m2}
   ,                                       !- Watts per Person {W/Person}
   1;                                      !- Fraction Latent
@@ -8534,7 +8534,7 @@ OS:ZoneHVAC:Dehumidifier:DX,
   {ab9930e0-d1a3-4ae5-b8b6-b8662c96cb85}, !- Availability Schedule Name
   {807a5598-6052-45f9-a50a-14b94b748a1d}, !- Air Inlet Node Name
   {526100a4-c803-4fd4-8989-d1cf7f0fb07c}, !- Air Outlet Node Name
-  1000,                                   !- Rated Water Removal {L/day}
+  450,                                    !- Rated Water Removal {L/day}
   3.412,                                  !- Rated Energy Factor {L/kWh}
   0.12036,                                !- Rated Air Flow Rate {m3/s}
   {cf990d55-7a28-45c9-91a8-8e5c2ace11a0}, !- Water Removal Curve Name

@@ -1,4 +1,4 @@
-Program Version,EnergyPlus, Version 8.9.0-eba93e8e1b, YMD=2018.10.25 12:03,
+Program Version,EnergyPlus, Version 8.9.0-eba93e8e1b, YMD=2018.10.25 13:44,
    ************* Beginning Zone Sizing Calculations
    ** Warning ** Site:GroundTemperature:BuildingSurface: Some values fall outside the range of 15-25C.
    **   ~~~   ** These values may be inappropriate.  Please consult the Input Output Reference for more details.
@@ -11,13 +11,9 @@ Program Version,EnergyPlus, Version 8.9.0-eba93e8e1b, YMD=2018.10.25 12:03,
    ** Warning ** GetSurfaceData: WindowProperty:ShadingControl: "SHADING CONTROL 1" is not referenced by any window.
    ** Warning ** CheckUsedConstructions: There are 26 nominally unused constructions in input.
    **   ~~~   ** For explicit details on each unused construction, use Output:Diagnostics,DisplayExtraWarnings;
-   ** Warning ** Calculated design cooling load for zone=THERMAL ZONE 1 is zero.
-   **   ~~~   ** Check Sizing:Zone and ZoneControl:Thermostat inputs.
    ************* Beginning System Sizing Calculations
    ** Warning ** Since Zone Minimum Air Flow Input Method = CONSTANT, input for Fixed Minimum Air Flow Rate will be ignored.
    **   ~~~   ** Occurs in AirTerminal:SingleDuct:VAV:NoReheat = VAV NO RHT
-   ** Warning ** ManageSizing: Calculated Cooling Design Air Flow Rate for System=PACKAGED ROOFTOP VAV WITH REHEAT is zero.
-   **   ~~~   ** Check Sizing:Zone and ZoneControl:Thermostat inputs.
    ** Warning ** Output:Meter: invalid Key Name="DISTRICTCOOLING:FACILITY" - not found.
    ** Warning ** Output:Meter: invalid Key Name="DISTRICTHEATING:FACILITY" - not found.
    ** Warning ** Output:Meter:MeterFileOnly requested for "Electricity:Facility" (TimeStep), already on "Output:Meter". Will report to both eplusout.eso and eplusout.mtr
@@ -30,10 +26,10 @@ Program Version,EnergyPlus, Version 8.9.0-eba93e8e1b, YMD=2018.10.25 12:03,
    ************* No node connection errors were found.
    ************* Beginning Simulation
    ** Warning ** Calculated Relative Humidity out of range (PsyRhFnTdbWPb) 
-   **   ~~~   **  Routine=CalcZoneDehumidifier, Environment=RUN PERIOD 1, at Simulation time=01/21 11:10 - 11:11
-   **   ~~~   **  Dry-Bulb= 21.87 Humidity Ratio= 1.660E-002 Calculated Relative Humidity [%]= 101.43
+   **   ~~~   **  Routine=Unknown, Environment=RUN PERIOD 1, at Simulation time=03/13 11:30 - 11:32
+   **   ~~~   **  Dry-Bulb= 26.20 Humidity Ratio= 2.174E-002 Calculated Relative Humidity [%]= 102.10
    **   ~~~   ** Relative Humidity being reset to 100.0%
-   ** Warning ** SimHVAC: Maximum iterations (20) exceeded for all HVAC loops, at RUN PERIOD 1, 09/01 09:54 - 09:55
+   ** Warning ** SimHVAC: Maximum iterations (20) exceeded for all HVAC loops, at RUN PERIOD 1, 07/18 22:08 - 22:10
    **   ~~~   ** The solution for one or more of the Air Loop HVAC systems did not appear to converge
    **   ~~~   ** ...use Output:Diagnostics,DisplayExtraWarnings; to show more details on each max iteration exceeded.
    ** Warning ** The resource referenced by LifeCycleCost:UsePriceEscalation= "U.S. AVG  COMMERCIAL-ELECTRICITY" has no energy cost. 
@@ -56,10 +52,10 @@ Program Version,EnergyPlus, Version 8.9.0-eba93e8e1b, YMD=2018.10.25 12:03,
    ************* The following recurring error messages occurred.
    *************
    *************  ** Warning ** Calculated Relative Humidity out of range (PsyRhFnTdbWPb)
-   *************  **   ~~~   **   This error occurred 2830 total times;
+   *************  **   ~~~   **   This error occurred 36 total times;
    *************  **   ~~~   **   during Warmup 0 times;
    *************  **   ~~~   **   during Sizing 0 times.
-   *************  **   ~~~   **   Max=112.562811 %  Min=101.002193 %
+   *************  **   ~~~   **   Max=102.217504 %  Min=101.224419 %
    *************
    *************
    ************* ===== Final Error Summary =====
@@ -70,5 +66,5 @@ Program Version,EnergyPlus, Version 8.9.0-eba93e8e1b, YMD=2018.10.25 12:03,
    ************* ..object. You may remove the constructions indicated (when you use the DisplayExtraWarnings option).
    *************
    ************* EnergyPlus Warmup Error Summary. During Warmup: 0 Warning; 0 Severe Errors.
-   ************* EnergyPlus Sizing Error Summary. During Sizing: 12 Warning; 0 Severe Errors.
-   ************* EnergyPlus Completed Successfully-- 2851 Warning; 0 Severe Errors; Elapsed Time=00hr 00min 22.98sec
+   ************* EnergyPlus Sizing Error Summary. During Sizing: 10 Warning; 0 Severe Errors.
+   ************* EnergyPlus Completed Successfully-- 55 Warning; 0 Severe Errors; Elapsed Time=00hr 00min 33.75sec
