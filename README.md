@@ -59,4 +59,9 @@ Outside temperature for summmer are kind of low. Max value is 26C. If sensible c
 I Thnik that plants sensible loads are si high (or low because in the negative) during summer that we need heating. 
 I'll try modifying the heating avaibility schedule to see the effect.
 
-
+So Even with heating off during summer, inside temperature, nat vent and cooling power doesn't change much.
+Seems that the control might be a little be aggressive on the Heater Unit. I could try looking into it or just keep it that way with scheduled avaibility.
+I could try adding april and septembre to the non avaibility.
+I really think systems are working against each other during summer because of their control type.
+ I'm not sure control by aticipated load of the heater unit takes into account sensible heating by DX dehumidifier and/or other equipment.
+ Temperature are negligibly lower when turning off heating, but heating consumption is way under...where does all this heat go then?

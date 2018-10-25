@@ -7724,7 +7724,7 @@ OS:Schedule:Day,
 OS:ZoneHVAC:UnitHeater,
   {71f0bb17-4c0c-4286-ac44-1f96cdb11677}, !- Handle
   CV Unit Heater Gas,                     !- Name
-  {ab9930e0-d1a3-4ae5-b8b6-b8662c96cb85}, !- Availability Schedule Name
+  {9fbf9673-6047-49a0-97ba-0b126b06f5a6}, !- Availability Schedule Name
   {e8ac5ccb-69dc-4a87-815f-fde5c9f76941}, !- Air Inlet Node Name
   {69e660c4-4523-45af-b878-f5713655e799}, !- Air Outlet Node Name
   {f4c25879-30aa-4b0b-a1b0-8f8cf2f737e9}, !- Supply Air Fan Name
@@ -26200,4 +26200,54 @@ OS:EnergyManagementSystem:Sensor,
   Energy_Management_System_Sensor_2,      !- Name
   {776bd1e1-abba-40dd-9652-f80757158299}, !- Output Variable or Output Meter Index Key Name
   Zone Dehumidifier Electric Power;       !- Output Variable or Output Meter Name
+
+OS:Schedule:Ruleset,
+  {9fbf9673-6047-49a0-97ba-0b126b06f5a6}, !- Handle
+  Gaz heater Avaibility,                  !- Name
+  {26f08f92-5cf4-480b-9ec7-db72358e5299}, !- Schedule Type Limits Name
+  {5b278d6b-26d2-4f08-bfc6-298b6213783f}; !- Default Day Schedule Name
+
+OS:Schedule:Day,
+  {5b278d6b-26d2-4f08-bfc6-298b6213783f}, !- Handle
+  Schedule Day 7,                         !- Name
+  {26f08f92-5cf4-480b-9ec7-db72358e5299}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  1;                                      !- Value Until Time 1
+
+OS:Schedule:Rule,
+  {07e05397-b521-40ec-874a-a35a06124107}, !- Handle
+  Summer Avaibility,                      !- Name
+  {9fbf9673-6047-49a0-97ba-0b126b06f5a6}, !- Schedule Ruleset Name
+  0,                                      !- Rule Order
+  {f6ea75b3-8c21-4eae-a231-f5cc3747bb7a}, !- Day Schedule Name
+  Yes,                                    !- Apply Sunday
+  Yes,                                    !- Apply Monday
+  Yes,                                    !- Apply Tuesday
+  Yes,                                    !- Apply Wednesday
+  Yes,                                    !- Apply Thursday
+  Yes,                                    !- Apply Friday
+  Yes,                                    !- Apply Saturday
+  ,                                       !- Apply Holiday
+  DateRange,                              !- Date Specification Type
+  5,                                      !- Start Month
+  1,                                      !- Start Day
+  9,                                      !- End Month
+  1;                                      !- End Day
+
+OS:Schedule:Day,
+  {f6ea75b3-8c21-4eae-a231-f5cc3747bb7a}, !- Handle
+  Schedule Day 8,                         !- Name
+  {26f08f92-5cf4-480b-9ec7-db72358e5299}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  4,                                      !- Hour 1
+  0,                                      !- Minute 1
+  0.200000002980232,                      !- Value Until Time 1
+  20,                                     !- Hour 2
+  0,                                      !- Minute 2
+  0,                                      !- Value Until Time 2
+  24,                                     !- Hour 3
+  0,                                      !- Minute 3
+  0.200000002980232;                      !- Value Until Time 3
 
