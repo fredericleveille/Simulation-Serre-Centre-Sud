@@ -26142,7 +26142,7 @@ OS:ZoneHVAC:Dehumidifier:DX,
   {6264d0f0-628f-4476-b4fd-6ecd294e568a}, !- Energy Factor Curve Name
   {733128ad-657e-4af1-a73f-e2afdd4236e3}, !- Part Load Fraction Correlation Curve Name
   10,                                     !- Minimum Dry-Bulb Temperature for Dehumidifier Operation {C}
-  32,                                     !- Maximum Dry-Bulb Temperature for Dehumidifier Operation {C}
+  35,                                     !- Maximum Dry-Bulb Temperature for Dehumidifier Operation {C}
   0;                                      !- Off-Cycle Parasitic Electric Load {W}
 
 OS:Node,

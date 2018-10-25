@@ -203,8 +203,26 @@
          "measure_dir_name" : "AddOutputVariable",
          "modeler_description" : "The measure just passes in the string and does not validate that it is a proper variable name. It is up to the user to know this or to look at the .rdd file from a previous simulation run.",
          "name" : "Add Zone Unit Heater Heating Rate"
+      },
+      {
+         "arguments" : {
+            "variable_name" : "Zone Predicted Sensible Load to Cooling Setpoint Heat Transfer Rate"
+         },
+         "description" : "This measure adds an output variable at the requested reporting frequency.",
+         "measure_dir_name" : "AddOutputVariable",
+         "modeler_description" : "The measure just passes in the string and does not validate that it is a proper variable name. It is up to the user to know this or to look at the .rdd file from a previous simulation run.",
+         "name" : "Add Zone Predicted Sensible Load to Cooling Setpoint Heat Transfer Rate"
+      },
+      {
+         "arguments" : {
+            "variable_name" : "Zone Predicted Sensible Load to Heating Setpoint Heat Transfer Rate"
+         },
+         "description" : "This measure adds an output variable at the requested reporting frequency.",
+         "measure_dir_name" : "AddOutputVariable",
+         "modeler_description" : "The measure just passes in the string and does not validate that it is a proper variable name. It is up to the user to know this or to look at the .rdd file from a previous simulation run.",
+         "name" : "Add Zone Predicted Sensible Load to Heating Setpoint Heat Transfer Rate"
       }
    ],
-   "updated_at" : "20181025T124059Z",
+   "updated_at" : "20181025T133033Z",
    "weather_file" : "CAN_PQ_Montreal.Intl.AP.716270_CWEC.epw"
 }
