@@ -6,7 +6,7 @@ Timestep,
   6;                                      !- Number of Timesteps per Hour
 
 LifeCycleCost:Parameters,
-  {352d26d4-1387-42d5-b1ac-c9b2f148aa36}, !- Name
+  {ae1502b5-5ab5-4882-8c2a-6a0d847b2549}, !- Name
   EndOfYear,                              !- Discounting Convention
   ConstantDollar,                         !- Inflation Approach
   0.03,                                   !- Real Discount Rate
@@ -1554,7 +1554,7 @@ Schedule:Day:Interval,
   16;                                     !- Value Until Time 3
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {456a219c-7921-49f0-87c6-279123923b10}, !- Name
+  Schedule:Week:Daily {b83639a7-fa94-43db-8db2-e30a5ffd84cf}, !- Name
   Schedule Day 18,                        !- Sunday Schedule:Day Name
   Schedule Day 18,                        !- Monday Schedule:Day Name
   Schedule Day 18,                        !- Tuesday Schedule:Day Name
@@ -1571,7 +1571,7 @@ Schedule:Week:Daily,
 Schedule:Year,
   Serre HtgStp,                           !- Name
   Temperature 37,                         !- Schedule Type Limits Name
-  Schedule:Week:Daily {456a219c-7921-49f0-87c6-279123923b10}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {b83639a7-fa94-43db-8db2-e30a5ffd84cf}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
@@ -1611,7 +1611,7 @@ Schedule:Day:Interval,
   24;                                     !- Value Until Time 3
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {b178cae6-9e0f-4bad-bf93-0c3a0578b1fc}, !- Name
+  Schedule:Week:Daily {7c44df01-91d8-46a1-b190-eac1c8a1449a}, !- Name
   Schedule Day 21,                        !- Sunday Schedule:Day Name
   Schedule Day 21,                        !- Monday Schedule:Day Name
   Schedule Day 21,                        !- Tuesday Schedule:Day Name
@@ -1628,7 +1628,7 @@ Schedule:Week:Daily,
 Schedule:Year,
   Serre ClgStp,                           !- Name
   Temperature 37,                         !- Schedule Type Limits Name
-  Schedule:Week:Daily {b178cae6-9e0f-4bad-bf93-0c3a0578b1fc}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {7c44df01-91d8-46a1-b190-eac1c8a1449a}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
@@ -1677,7 +1677,7 @@ Schedule:Day:Interval,
   59.9999961853027;                       !- Value Until Time 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {8e4fcd06-798d-46a9-baa3-5523ff848e24}, !- Name
+  Schedule:Week:Daily {ed3ab290-1399-41e3-88f9-1b0f5127537f}, !- Name
   Schedule Day 34,                        !- Sunday Schedule:Day Name
   Schedule Day 34,                        !- Monday Schedule:Day Name
   Schedule Day 34,                        !- Tuesday Schedule:Day Name
@@ -1694,7 +1694,7 @@ Schedule:Week:Daily,
 Schedule:Year,
   Serre hum RH Stpt,                      !- Name
   Percent,                                !- Schedule Type Limits Name
-  Schedule:Week:Daily {8e4fcd06-798d-46a9-baa3-5523ff848e24}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {ed3ab290-1399-41e3-88f9-1b0f5127537f}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
@@ -1708,7 +1708,7 @@ Schedule:Day:Interval,
   80;                                     !- Value Until Time 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {92498bd9-9c27-4e0f-b242-64e9b7dfe574}, !- Name
+  Schedule:Week:Daily {ce271ec6-20ff-4563-acf1-79be4b90b8f9}, !- Name
   Schedule Day 6,                         !- Sunday Schedule:Day Name
   Schedule Day 6,                         !- Monday Schedule:Day Name
   Schedule Day 6,                         !- Tuesday Schedule:Day Name
@@ -1725,7 +1725,7 @@ Schedule:Week:Daily,
 Schedule:Year,
   Serre Dehum RH Stpt,                    !- Name
   Percent,                                !- Schedule Type Limits Name
-  Schedule:Week:Daily {92498bd9-9c27-4e0f-b242-64e9b7dfe574}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {ce271ec6-20ff-4563-acf1-79be4b90b8f9}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
@@ -1870,7 +1870,7 @@ ZoneHVAC:Dehumidifier:DX,
   Dehumidifier Energy Factor Curve,       !- Energy Factor Curve Name
   Dehumidifier Part Load Curve,           !- Part Load Fraction Correlation Curve Name
   10,                                     !- Minimum Dry-Bulb Temperature for Dehumidifier Operation {C}
-  32,                                     !- Maximum Dry-Bulb Temperature for Dehumidifier Operation {C}
+  35,                                     !- Maximum Dry-Bulb Temperature for Dehumidifier Operation {C}
   0;                                      !- Off-Cycle Parasitic Electric Load {W}
 
 Curve:Biquadratic,
@@ -2028,7 +2028,7 @@ ZoneAirHeatBalanceAlgorithm,
   ThirdOrderBackwardDifference;           !- Algorithm
 
 ZoneCapacitanceMultiplier:ResearchSpecial,
-  {81078876-53fa-4215-9244-67cc8097d5d1}, !- Name
+  {f38eeb8e-724f-4097-ae60-8306dd0824fe}, !- Name
   ,                                       !- Zone or ZoneList Name
   ,                                       !- Temperature Capacity Multiplier
   ,                                       !- Humidity Capacity Multiplier
@@ -3583,7 +3583,7 @@ Schedule:Day:Interval,
   1;                                      !- Value Until Time 3
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {fd19a143-4017-448b-a4be-29411c8e08f7}, !- Name
+  Schedule:Week:Daily {76dd12f1-b168-44d4-b240-610684ad1d15}, !- Name
   Chilled_Water_Temperature_Default,      !- Sunday Schedule:Day Name
   Chilled_Water_Temperature_Default,      !- Monday Schedule:Day Name
   Chilled_Water_Temperature_Default,      !- Tuesday Schedule:Day Name
@@ -3600,14 +3600,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Chilled_Water_Temperature,              !- Name
   ,                                       !- Schedule Type Limits Name
-  Schedule:Week:Daily {fd19a143-4017-448b-a4be-29411c8e08f7}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {76dd12f1-b168-44d4-b240-610684ad1d15}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {3f2daf99-e6a8-40a5-8ef9-9ea2fcbb05de}, !- Name
+  Schedule:Week:Daily {d2f5a387-6335-4cd2-bddd-395bdc035a40}, !- Name
   Deck_Temperature_Default,               !- Sunday Schedule:Day Name
   Deck_Temperature_Default,               !- Monday Schedule:Day Name
   Deck_Temperature_Default,               !- Tuesday Schedule:Day Name
@@ -3624,14 +3624,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Deck_Temperature,                       !- Name
   Temperature 4,                          !- Schedule Type Limits Name
-  Schedule:Week:Daily {3f2daf99-e6a8-40a5-8ef9-9ea2fcbb05de}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {d2f5a387-6335-4cd2-bddd-395bdc035a40}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {da941989-db0b-41ab-9ac2-86ddb948f0fc}, !- Name
+  Schedule:Week:Daily {2809a5f1-4809-4338-bdb4-93845789d0e2}, !- Name
   Hot_Water_Temperature_Default,          !- Sunday Schedule:Day Name
   Hot_Water_Temperature_Default,          !- Monday Schedule:Day Name
   Hot_Water_Temperature_Default,          !- Tuesday Schedule:Day Name
@@ -3648,14 +3648,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Hot_Water_Temperature,                  !- Name
   Temperature 4,                          !- Schedule Type Limits Name
-  Schedule:Week:Daily {da941989-db0b-41ab-9ac2-86ddb948f0fc}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {2809a5f1-4809-4338-bdb4-93845789d0e2}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {03259a2f-aa0d-49cd-802e-f98415b2e9b9}, !- Name
+  Schedule:Week:Daily {80e11fb3-e191-4600-8500-5ecaf5c22dee}, !- Name
   Office Activity Default Schedule,       !- Sunday Schedule:Day Name
   Office Activity Default Schedule,       !- Monday Schedule:Day Name
   Office Activity Default Schedule,       !- Tuesday Schedule:Day Name
@@ -3672,14 +3672,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Office Activity,                        !- Name
   ActivityLevel,                          !- Schedule Type Limits Name
-  Schedule:Week:Daily {03259a2f-aa0d-49cd-802e-f98415b2e9b9}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {80e11fb3-e191-4600-8500-5ecaf5c22dee}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {3d66524b-172f-4e1e-bb5c-a30e673f9f3e}, !- Name
+  Schedule:Week:Daily {52fe4c71-caa9-47b5-b420-990f5401763a}, !- Name
   Office Bldg Equip Rule 1 Day Schedule,  !- Sunday Schedule:Day Name
   Office Bldg Equip Default Schedule,     !- Monday Schedule:Day Name
   Office Bldg Equip Default Schedule,     !- Tuesday Schedule:Day Name
@@ -3696,14 +3696,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Office Bldg Equip,                      !- Name
   Fraction,                               !- Schedule Type Limits Name
-  Schedule:Week:Daily {3d66524b-172f-4e1e-bb5c-a30e673f9f3e}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {52fe4c71-caa9-47b5-b420-990f5401763a}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {6913f627-cdf7-40d4-ad0d-729d4935ab48}, !- Name
+  Schedule:Week:Daily {0b66b6d2-7f05-49b7-9f75-57c19d4ea77a}, !- Name
   Office Bldg Light Rule 1 Day Schedule,  !- Sunday Schedule:Day Name
   Office Bldg Light Default Schedule,     !- Monday Schedule:Day Name
   Office Bldg Light Default Schedule,     !- Tuesday Schedule:Day Name
@@ -3720,14 +3720,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Office Bldg Light,                      !- Name
   Fraction,                               !- Schedule Type Limits Name
-  Schedule:Week:Daily {6913f627-cdf7-40d4-ad0d-729d4935ab48}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {0b66b6d2-7f05-49b7-9f75-57c19d4ea77a}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {d412b296-4367-47ec-be1c-1a578c449b37}, !- Name
+  Schedule:Week:Daily {8e94d1ad-6370-4153-8b1d-ff2d903b73fb}, !- Name
   Office Infil Quarter On Rule 1 Day Schedule, !- Sunday Schedule:Day Name
   Office Infil Quarter On Default Schedule, !- Monday Schedule:Day Name
   Office Infil Quarter On Default Schedule, !- Tuesday Schedule:Day Name
@@ -3744,14 +3744,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Office Infil Quarter On,                !- Name
   Fraction,                               !- Schedule Type Limits Name
-  Schedule:Week:Daily {d412b296-4367-47ec-be1c-1a578c449b37}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {8e94d1ad-6370-4153-8b1d-ff2d903b73fb}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {50f5aff6-b021-4cd3-ac51-499083cfa766}, !- Name
+  Schedule:Week:Daily {4df1f7ea-2534-4282-9d52-498581840912}, !- Name
   Office Bldg Occ Rule 1 Day Schedule 1,  !- Sunday Schedule:Day Name
   Office Bldg Occ Default Schedule 1,     !- Monday Schedule:Day Name
   Office Bldg Occ Default Schedule 1,     !- Tuesday Schedule:Day Name
@@ -3768,14 +3768,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Office Misc Occ,                        !- Name
   Fraction,                               !- Schedule Type Limits Name
-  Schedule:Week:Daily {50f5aff6-b021-4cd3-ac51-499083cfa766}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {4df1f7ea-2534-4282-9d52-498581840912}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {c58b82c3-473b-43e8-8d06-9b24b56569e6}, !- Name
+  Schedule:Week:Daily {7345df42-32b2-47ae-8a5f-452f854429c8}, !- Name
   Office Bldg Occ Rule 1 Day Schedule,    !- Sunday Schedule:Day Name
   Office Bldg Occ Default Schedule,       !- Monday Schedule:Day Name
   Office Bldg Occ Default Schedule,       !- Tuesday Schedule:Day Name
@@ -3792,14 +3792,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Office Work Occ,                        !- Name
   Fraction,                               !- Schedule Type Limits Name
-  Schedule:Week:Daily {c58b82c3-473b-43e8-8d06-9b24b56569e6}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {7345df42-32b2-47ae-8a5f-452f854429c8}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {dc2f1f28-fb1a-4d9e-8e2c-121817edd77c}, !- Name
+  Schedule:Week:Daily {6773a93a-62ef-43af-bada-4572b69b2577}, !- Name
   Schedule Day 33,                        !- Sunday Schedule:Day Name
   Schedule Day 33,                        !- Monday Schedule:Day Name
   Schedule Day 33,                        !- Tuesday Schedule:Day Name
@@ -3816,14 +3816,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Serre Circulating fac schedule 1,       !- Name
   OnOff 1,                                !- Schedule Type Limits Name
-  Schedule:Week:Daily {dc2f1f28-fb1a-4d9e-8e2c-121817edd77c}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {6773a93a-62ef-43af-bada-4572b69b2577}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {0e4c1ad2-c4f6-4c34-8bbb-6e7d6e1dd9fc}, !- Name
+  Schedule:Week:Daily {cf8c7dc1-407d-4e36-8b94-4681ac8df0b5}, !- Name
   Schedule Day 4,                         !- Sunday Schedule:Day Name
   Schedule Day 4,                         !- Monday Schedule:Day Name
   Schedule Day 4,                         !- Tuesday Schedule:Day Name
@@ -3838,7 +3838,7 @@ Schedule:Week:Daily,
   Schedule Day 4;                         !- CustomDay2 Schedule:Day Name
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {18a16bd3-9e25-43d2-a9ae-5e31cdc3352e}, !- Name
+  Schedule:Week:Daily {11f6d844-92fe-40da-971a-d4a420f47aba}, !- Name
   Schedule Day 5,                         !- Sunday Schedule:Day Name
   Schedule Day 5,                         !- Monday Schedule:Day Name
   Schedule Day 5,                         !- Tuesday Schedule:Day Name
@@ -3853,7 +3853,7 @@ Schedule:Week:Daily,
   Schedule Day 4;                         !- CustomDay2 Schedule:Day Name
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {d34c93d8-f42d-46d2-83f0-875d92cb396a}, !- Name
+  Schedule:Week:Daily {cebffd4b-b68e-4d6a-90d8-a5cccb51339b}, !- Name
   Schedule Day 5,                         !- Sunday Schedule:Day Name
   Schedule Day 5,                         !- Monday Schedule:Day Name
   Schedule Day 5,                         !- Tuesday Schedule:Day Name
@@ -3868,7 +3868,7 @@ Schedule:Week:Daily,
   Schedule Day 4;                         !- CustomDay2 Schedule:Day Name
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {3ce8a3c9-b3f8-47a3-b8ce-7b2ae9b2a752}, !- Name
+  Schedule:Week:Daily {88cbb9bc-815b-4578-beb5-f461995e3a56}, !- Name
   Schedule Day 4,                         !- Sunday Schedule:Day Name
   Schedule Day 4,                         !- Monday Schedule:Day Name
   Schedule Day 4,                         !- Tuesday Schedule:Day Name
@@ -3885,29 +3885,29 @@ Schedule:Week:Daily,
 Schedule:Year,
   Serre Htg Fan avaibility,               !- Name
   Dimensionless 3,                        !- Schedule Type Limits Name
-  Schedule:Week:Daily {0e4c1ad2-c4f6-4c34-8bbb-6e7d6e1dd9fc}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {cf8c7dc1-407d-4e36-8b94-4681ac8df0b5}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   4,                                      !- End Month 1
   29,                                     !- End Day 1
-  Schedule:Week:Daily {18a16bd3-9e25-43d2-a9ae-5e31cdc3352e}, !- Schedule:Week Name 2
+  Schedule:Week:Daily {11f6d844-92fe-40da-971a-d4a420f47aba}, !- Schedule:Week Name 2
   4,                                      !- Start Month 2
   30,                                     !- Start Day 2
   8,                                      !- End Month 2
   26,                                     !- End Day 2
-  Schedule:Week:Daily {d34c93d8-f42d-46d2-83f0-875d92cb396a}, !- Schedule:Week Name 3
+  Schedule:Week:Daily {cebffd4b-b68e-4d6a-90d8-a5cccb51339b}, !- Schedule:Week Name 3
   8,                                      !- Start Month 3
   27,                                     !- Start Day 3
   9,                                      !- End Month 3
   2,                                      !- End Day 3
-  Schedule:Week:Daily {3ce8a3c9-b3f8-47a3-b8ce-7b2ae9b2a752}, !- Schedule:Week Name 4
+  Schedule:Week:Daily {88cbb9bc-815b-4578-beb5-f461995e3a56}, !- Schedule:Week Name 4
   9,                                      !- Start Month 4
   3,                                      !- Start Day 4
   12,                                     !- End Month 4
   31;                                     !- End Day 4
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {821d801c-42c2-436b-b148-1953da0772e4}, !- Name
+  Schedule:Week:Daily {3af22e2a-6b82-47e2-92b3-246518e48f03}, !- Name
   Schedule Day 3,                         !- Sunday Schedule:Day Name
   Schedule Day 3,                         !- Monday Schedule:Day Name
   Schedule Day 3,                         !- Tuesday Schedule:Day Name
@@ -3922,7 +3922,7 @@ Schedule:Week:Daily,
   Schedule Day 1;                         !- CustomDay2 Schedule:Day Name
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {e2ddc9df-ca6e-46b4-bbae-0a6ae8e66056}, !- Name
+  Schedule:Week:Daily {52a1e8c2-39e3-49ae-8a3f-d4497a1d8edf}, !- Name
   Schedule Day 3,                         !- Sunday Schedule:Day Name
   Schedule Day 3,                         !- Monday Schedule:Day Name
   Schedule Day 3,                         !- Tuesday Schedule:Day Name
@@ -3937,7 +3937,7 @@ Schedule:Week:Daily,
   Schedule Day 1;                         !- CustomDay2 Schedule:Day Name
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {e9fb3aad-0c1c-4627-80d8-c6673e6859a6}, !- Name
+  Schedule:Week:Daily {9e9312b5-ffe3-4182-9f48-cef6cbbe1bfe}, !- Name
   Schedule Day 1,                         !- Sunday Schedule:Day Name
   Schedule Day 1,                         !- Monday Schedule:Day Name
   Schedule Day 1,                         !- Tuesday Schedule:Day Name
@@ -3952,7 +3952,7 @@ Schedule:Week:Daily,
   Schedule Day 1;                         !- CustomDay2 Schedule:Day Name
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {4e8b8165-0963-4caf-8690-14a2981a56bb}, !- Name
+  Schedule:Week:Daily {f0ac4d35-0d14-4673-8a10-5a0976da894b}, !- Name
   Schedule Day 1,                         !- Sunday Schedule:Day Name
   Schedule Day 1,                         !- Monday Schedule:Day Name
   Schedule Day 1,                         !- Tuesday Schedule:Day Name
@@ -3967,7 +3967,7 @@ Schedule:Week:Daily,
   Schedule Day 1;                         !- CustomDay2 Schedule:Day Name
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {a1ac2fa7-f8ce-46eb-8483-a2f25557c1e6}, !- Name
+  Schedule:Week:Daily {9b10c57f-b235-43f0-8d91-3e0bd96b1db2}, !- Name
   Schedule Day 2,                         !- Sunday Schedule:Day Name
   Schedule Day 2,                         !- Monday Schedule:Day Name
   Schedule Day 2,                         !- Tuesday Schedule:Day Name
@@ -3984,34 +3984,34 @@ Schedule:Week:Daily,
 Schedule:Year,
   Serre Nat Vent dispo,                   !- Name
   Dimensionless,                          !- Schedule Type Limits Name
-  Schedule:Week:Daily {821d801c-42c2-436b-b148-1953da0772e4}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {3af22e2a-6b82-47e2-92b3-246518e48f03}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   3,                                      !- End Month 1
   25,                                     !- End Day 1
-  Schedule:Week:Daily {e2ddc9df-ca6e-46b4-bbae-0a6ae8e66056}, !- Schedule:Week Name 2
+  Schedule:Week:Daily {52a1e8c2-39e3-49ae-8a3f-d4497a1d8edf}, !- Schedule:Week Name 2
   3,                                      !- Start Month 2
   26,                                     !- Start Day 2
   4,                                      !- End Month 2
   1,                                      !- End Day 2
-  Schedule:Week:Daily {e9fb3aad-0c1c-4627-80d8-c6673e6859a6}, !- Schedule:Week Name 3
+  Schedule:Week:Daily {9e9312b5-ffe3-4182-9f48-cef6cbbe1bfe}, !- Schedule:Week Name 3
   4,                                      !- Start Month 3
   2,                                      !- Start Day 3
   9,                                      !- End Month 3
   23,                                     !- End Day 3
-  Schedule:Week:Daily {4e8b8165-0963-4caf-8690-14a2981a56bb}, !- Schedule:Week Name 4
+  Schedule:Week:Daily {f0ac4d35-0d14-4673-8a10-5a0976da894b}, !- Schedule:Week Name 4
   9,                                      !- Start Month 4
   24,                                     !- Start Day 4
   9,                                      !- End Month 4
   30,                                     !- End Day 4
-  Schedule:Week:Daily {a1ac2fa7-f8ce-46eb-8483-a2f25557c1e6}, !- Schedule:Week Name 5
+  Schedule:Week:Daily {9b10c57f-b235-43f0-8d91-3e0bd96b1db2}, !- Schedule:Week Name 5
   10,                                     !- Start Month 5
   1,                                      !- Start Day 5
   12,                                     !- End Month 5
   31;                                     !- End Day 5
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {ff42912d-98c1-4e2c-aa05-d051a63789e8}, !- Name
+  Schedule:Week:Daily {5a1bd676-705a-427b-bb7d-210f5450da0e}, !- Name
   Small Office Activity Default Schedule, !- Sunday Schedule:Day Name
   Small Office Activity Default Schedule, !- Monday Schedule:Day Name
   Small Office Activity Default Schedule, !- Tuesday Schedule:Day Name
@@ -4028,14 +4028,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Small Office Activity,                  !- Name
   ActivityLevel 12,                       !- Schedule Type Limits Name
-  Schedule:Week:Daily {ff42912d-98c1-4e2c-aa05-d051a63789e8}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {5a1bd676-705a-427b-bb7d-210f5450da0e}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {a1610919-730e-4bb6-aa1e-d81efff75931}, !- Name
+  Schedule:Week:Daily {bbc49674-fe63-4ae8-b1e2-c0ca92fc605c}, !- Name
   Small Office Bldg Equip Rule 1 Day Schedule, !- Sunday Schedule:Day Name
   Small Office Bldg Equip Default Schedule, !- Monday Schedule:Day Name
   Small Office Bldg Equip Default Schedule, !- Tuesday Schedule:Day Name
@@ -4052,14 +4052,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Small Office Bldg Equip,                !- Name
   Fractional,                             !- Schedule Type Limits Name
-  Schedule:Week:Daily {a1610919-730e-4bb6-aa1e-d81efff75931}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {bbc49674-fe63-4ae8-b1e2-c0ca92fc605c}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {edabffcd-3d02-4159-adc5-9b6beacf32a4}, !- Name
+  Schedule:Week:Daily {3a2c5330-3c3f-40e7-844b-b01eb510e24c}, !- Name
   Small Office Bldg Occ Rule 1 Day Schedule, !- Sunday Schedule:Day Name
   Small Office Bldg Occ Default Schedule, !- Monday Schedule:Day Name
   Small Office Bldg Occ Default Schedule, !- Tuesday Schedule:Day Name
@@ -4076,14 +4076,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Small Office Bldg Occ,                  !- Name
   Fractional,                             !- Schedule Type Limits Name
-  Schedule:Week:Daily {edabffcd-3d02-4159-adc5-9b6beacf32a4}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {3a2c5330-3c3f-40e7-844b-b01eb510e24c}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {061cb234-bddf-4920-a25f-a24f373ec2d6}, !- Name
+  Schedule:Week:Daily {773db072-5154-4025-9329-b07cb8d68061}, !- Name
   Small Office ClgSetp Rule 1 Day Schedule, !- Sunday Schedule:Day Name
   Small Office ClgSetp Default Schedule,  !- Monday Schedule:Day Name
   Small Office ClgSetp Default Schedule,  !- Tuesday Schedule:Day Name
@@ -4100,14 +4100,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Small Office ClgSetp,                   !- Name
   Temperature 4,                          !- Schedule Type Limits Name
-  Schedule:Week:Daily {061cb234-bddf-4920-a25f-a24f373ec2d6}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {773db072-5154-4025-9329-b07cb8d68061}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {ad0ed19f-e125-4592-a4b8-2f40f2ffc85b}, !- Name
+  Schedule:Week:Daily {8c5117f7-f959-4e0e-80c9-443974b16be1}, !- Name
   Small Office HtgSetp Rule 1 Day Schedule, !- Sunday Schedule:Day Name
   Small Office HtgSetp Default Schedule,  !- Monday Schedule:Day Name
   Small Office HtgSetp Default Schedule,  !- Tuesday Schedule:Day Name
@@ -4124,14 +4124,14 @@ Schedule:Week:Daily,
 Schedule:Year,
   Small Office HtgSetp,                   !- Name
   Temperature 11,                         !- Schedule Type Limits Name
-  Schedule:Week:Daily {ad0ed19f-e125-4592-a4b8-2f40f2ffc85b}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {8c5117f7-f959-4e0e-80c9-443974b16be1}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
   31;                                     !- End Day 1
 
 Schedule:Week:Daily,
-  Schedule:Week:Daily {e143e2e2-aa63-4b2d-85a7-3259f5944102}, !- Name
+  Schedule:Week:Daily {182bea6f-81d7-43ef-b19e-70250677e7f9}, !- Name
   Small Office Infil Quarter On Rule 1 Day Schedule, !- Sunday Schedule:Day Name
   Small Office Infil Quarter On Default Schedule, !- Monday Schedule:Day Name
   Small Office Infil Quarter On Default Schedule, !- Tuesday Schedule:Day Name
@@ -4148,7 +4148,7 @@ Schedule:Week:Daily,
 Schedule:Year,
   Small Office Infil Quarter On,          !- Name
   Fractional,                             !- Schedule Type Limits Name
-  Schedule:Week:Daily {e143e2e2-aa63-4b2d-85a7-3259f5944102}, !- Schedule:Week Name 1
+  Schedule:Week:Daily {182bea6f-81d7-43ef-b19e-70250677e7f9}, !- Schedule:Week Name 1
   1,                                      !- Start Month 1
   1,                                      !- Start Day 1
   12,                                     !- End Month 1
@@ -13794,19 +13794,19 @@ Coil:Cooling:DX:TwoSpeed,
   10,                                     !- Basin Heater Capacity {W/K}
   2;                                      !- Basin Heater Setpoint Temperature {C}
 
-SetpointManager:MultiZone:Humidity:Maximum,
-  Setpoint Manager Multi Zone Humidity Maximum, !- Name
-  Packaged Rooftop VAV with Reheat,       !- HVAC Air Loop Name
-  0.008,                                  !- Minimum Setpoint Humidity Ratio {kgWater/kgDryAir}
-  0.0105,                                 !- Maximum Setpoint Humidity Ratio {kgWater/kgDryAir}
-  Node 12;                                !- Setpoint Node or NodeList Name
-
 SetpointManager:MixedAir,
   Node 12 OS Default SPM,                 !- Name
   Temperature,                            !- Control Variable
   Node 5,                                 !- Reference Setpoint Node Name
   Node 12,                                !- Fan Inlet Node Name
   Node 5,                                 !- Fan Outlet Node Name
+  Node 12;                                !- Setpoint Node or NodeList Name
+
+SetpointManager:MultiZone:Humidity:Maximum,
+  Setpoint Manager Multi Zone Humidity Maximum, !- Name
+  Packaged Rooftop VAV with Reheat,       !- HVAC Air Loop Name
+  0.008,                                  !- Minimum Setpoint Humidity Ratio {kgWater/kgDryAir}
+  0.0105,                                 !- Maximum Setpoint Humidity Ratio {kgWater/kgDryAir}
   Node 12;                                !- Setpoint Node or NodeList Name
 
 Curve:Biquadratic,
@@ -13907,7 +13907,7 @@ Fan:VariableVolume,
 SetpointManager:Scheduled,
   Setpoint Manager Scheduled 1,           !- Name
   Temperature,                            !- Control Variable
-  Deck_Temperature,                       !- Schedule Name
+  Serre ClgStp,                           !- Schedule Name
   Node 5;                                 !- Setpoint Node or NodeList Name
 
 AirLoopHVAC:SupplyPath,
@@ -14272,6 +14272,16 @@ Output:Variable,
 Output:Variable,
   *,                                      !- Key Value
   Zone Unit Heater Heating Rate,          !- Variable Name
+  hourly;                                 !- Reporting Frequency
+
+Output:Variable,
+  *,                                      !- Key Value
+  Zone Predicted Sensible Load to Cooling Setpoint Heat Transfer Rate, !- Variable Name
+  hourly;                                 !- Reporting Frequency
+
+Output:Variable,
+  *,                                      !- Key Value
+  Zone Predicted Sensible Load to Heating Setpoint Heat Transfer Rate, !- Variable Name
   hourly;                                 !- Reporting Frequency
 
 Output:Variable,

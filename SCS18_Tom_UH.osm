@@ -8223,7 +8223,7 @@ OS:SetpointManager:Scheduled,
   {ae24378f-8806-4fab-995d-5e86d4ad427b}, !- Handle
   Setpoint Manager Scheduled 1,           !- Name
   Temperature,                            !- Control Variable
-  {2f419472-22b4-4885-99f1-fae3086e7b80}, !- Schedule Name
+  {adff687d-27b2-4b1e-99d6-978fbfc5b6df}, !- Schedule Name
   {2058b929-5225-4a87-92ab-6c18a8e19c0f}; !- Setpoint Node or NodeList Name
 
 OS:Controller:OutdoorAir,

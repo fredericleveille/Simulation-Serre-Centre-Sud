@@ -45,6 +45,7 @@ I was able to control approximatly well the RH with a DX dehumidifier sized for 
 Now remains only to plot system different component consumption Electric (cooling and dehum) and gaz (heating)
 
 Problem to investigate: why do I have so much heating during summer...
+
 ##Investigating Energy consumption
 Zone Mechanical Ventilation Mass Flow Rate = 0 all year
 Zone Ventilation Mass Flow Rate varies all year.Mainly closed, but otherwis between 0 and 2 kg/s It should be, according to E+ Doc the natural ventilation. 
@@ -53,3 +54,9 @@ There's not that much heating during summer. The problem is that I have heating 
 Also, Temperature seems lower during summer than winter...maybe because of the control type on the cooling coil that sets duct temperatur at 14C
 I can either change the control type to investigate or try scheduling no avaibility for heating during sumer to see the impact.
 I'll try first to change the setpoint temperature for the cooling coil to the setpoint of the greenhouse and see the effect.
+When modifying cooling temperature setpoint to a higher valu (GH vs 14) the cooling coil works a lot less but natural ventilation and heating are higher.
+Outside temperature for summmer are kind of low. Max value is 26C. If sensible cooling by plant is high and ther is a lot of nat vent that could explain the need for heating.
+I Thnik that plants sensible loads are si high (or low because in the negative) during summer that we need heating. 
+I'll try modifying the heating avaibility schedule to see the effect.
+
+
