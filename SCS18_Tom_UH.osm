@@ -6228,10 +6228,10 @@ OS:ZoneHVAC:EquipmentList,
   {71f0bb17-4c0c-4286-ac44-1f96cdb11677}, !- Zone Equipment 2
   2,                                      !- Zone Equipment Cooling Sequence 2
   2,                                      !- Zone Equipment Heating or No-Load Sequence 2
-  {934f848d-ca7b-4edb-b2fb-d277d933d127}, !- Zone Equipment 3
+  {776bd1e1-abba-40dd-9652-f80757158299}, !- Zone Equipment 3
   3,                                      !- Zone Equipment Cooling Sequence 3
   3,                                      !- Zone Equipment Heating or No-Load Sequence 3
-  {776bd1e1-abba-40dd-9652-f80757158299}, !- Zone Equipment 4
+  {64aad699-edf5-4d95-aa9c-f0e4a4076f14}, !- Zone Equipment 4
   4,                                      !- Zone Equipment Cooling Sequence 4
   4;                                      !- Zone Equipment Heating or No-Load Sequence 4
 
@@ -7989,7 +7989,7 @@ OS:Node,
 OS:Node,
   {4e0926d7-4998-473b-bc6a-ab24bc00755e}, !- Handle
   Node 8,                                 !- Name
-  {6c6bc71d-aa1f-45ba-9f82-b2d3956d9104}, !- Inlet Port
+  {56917aff-87b9-4e1b-a9a4-28f99394863e}, !- Inlet Port
   {8b8bb127-5440-4065-a8ba-061da0391762}; !- Outlet Port
 
 OS:Connection,
@@ -8012,7 +8012,7 @@ OS:AirLoopHVAC:ZoneSplitter,
   {915b2a4c-02db-4771-ba72-de4a0288f4db}, !- Handle
   Air Loop HVAC Zone Splitter 1,          !- Name
   {76ca7dc2-4017-444c-97b6-0f4954c79624}, !- Inlet Node Name
-  {fbffac61-c899-489c-8d67-a1f31609e9f3}; !- Outlet Node Name 1
+  {f38cf3e6-0d48-4e8e-ae40-d69c800a04ef}; !- Outlet Node Name 1
 
 OS:AirLoopHVAC:ZoneMixer,
   {c65a5adf-5dc1-482c-ae35-1d3011596409}, !- Handle
@@ -8379,67 +8379,6 @@ OS:Connection,
   3,                                      !- Outlet Port
   {9fc8e03b-3a97-4c6d-8bd6-7160621f765c}, !- Target Object
   16;                                     !- Inlet Port
-
-OS:AirTerminal:SingleDuct:VAV:Reheat,
-  {934f848d-ca7b-4edb-b2fb-d277d933d127}, !- Handle
-  VAV Elec Rht,                           !- Name
-  {ab9930e0-d1a3-4ae5-b8b6-b8662c96cb85}, !- Availability Schedule Name
-  {c72d4a37-6220-4148-836b-2d931b4fe65b}, !- Air Inlet Node Name
-  Autosize,                               !- Maximum Air Flow Rate {m3/s}
-  Constant,                               !- Zone Minimum Air Flow Input Method
-  0.29999999999999999,                    !- Constant Minimum Air Flow Fraction
-  0,                                      !- Fixed Minimum Air Flow Rate {m3/s}
-  ,                                       !- Minimum Air Flow Fraction Schedule Name
-  {3760fd17-7219-4ca5-a810-3a8cf0e49e70}, !- Reheat Coil Name
-  Autosize,                               !- Maximum Hot Water or Steam Flow Rate {m3/s}
-  0,                                      !- Minimum Hot Water or Steam Flow Rate {m3/s}
-  {6c6bc71d-aa1f-45ba-9f82-b2d3956d9104}, !- Air Outlet Node Name
-  0.001,                                  !- Convergence Tolerance
-  Normal,                                 !- Damper Heating Action
-  AutoSize,                               !- Maximum Flow per Zone Floor Area During Reheat {m3/s-m2}
-  AutoSize,                               !- Maximum Flow Fraction During Reheat
-  35,                                     !- Maximum Reheat Air Temperature {C}
-  No;                                     !- Control For Outdoor Air
-
-OS:Coil:Heating:Electric,
-  {3760fd17-7219-4ca5-a810-3a8cf0e49e70}, ! Handle
-  VAV Elec Rht Coil,                      ! Name
-  {ab9930e0-d1a3-4ae5-b8b6-b8662c96cb85}, ! Availability Schedule Name
-  ,                                       ! Efficiency
-  ,                                       ! Nominal Capacity {W}
-  ,                                       ! Air Inlet Node Name
-  ,                                       ! Air Outlet Node Name
-  ;                                       ! Design Specification Outdoor Air Object Name
-
-OS:Node,
-  {e997e31b-1b60-48c5-b5f7-bb6b568b6160}, !- Handle
-  Node 13,                                !- Name
-  {fbffac61-c899-489c-8d67-a1f31609e9f3}, !- Inlet Port
-  {c72d4a37-6220-4148-836b-2d931b4fe65b}; !- Outlet Port
-
-OS:Connection,
-  {fbffac61-c899-489c-8d67-a1f31609e9f3}, !- Handle
-  {9bc7e5fb-cb50-4ddd-9a71-8f52be5dfe46}, !- Name
-  {915b2a4c-02db-4771-ba72-de4a0288f4db}, !- Source Object
-  3,                                      !- Outlet Port
-  {e997e31b-1b60-48c5-b5f7-bb6b568b6160}, !- Target Object
-  2;                                      !- Inlet Port
-
-OS:Connection,
-  {c72d4a37-6220-4148-836b-2d931b4fe65b}, !- Handle
-  {abe1e6b9-4b93-4be4-9824-401c19b99f21}, !- Name
-  {e997e31b-1b60-48c5-b5f7-bb6b568b6160}, !- Source Object
-  3,                                      !- Outlet Port
-  {934f848d-ca7b-4edb-b2fb-d277d933d127}, !- Target Object
-  3;                                      !- Inlet Port
-
-OS:Connection,
-  {6c6bc71d-aa1f-45ba-9f82-b2d3956d9104}, !- Handle
-  {2ae3b35e-06f0-4610-b4b4-e9ce527c02d1}, !- Name
-  {934f848d-ca7b-4edb-b2fb-d277d933d127}, !- Source Object
-  12,                                     !- Outlet Port
-  {4e0926d7-4998-473b-bc6a-ab24bc00755e}, !- Target Object
-  2;                                      !- Inlet Port
 
 OS:Node,
   {d0da8c35-46dd-4263-93c0-9d9f38208855}, !- Handle
@@ -26250,4 +26189,47 @@ OS:Schedule:Day,
   24,                                     !- Hour 3
   0,                                      !- Minute 3
   0.200000002980232;                      !- Value Until Time 3
+
+OS:AirTerminal:SingleDuct:VAV:NoReheat,
+  {64aad699-edf5-4d95-aa9c-f0e4a4076f14}, !- Handle
+  VAV No Rht,                             !- Name
+  {ab9930e0-d1a3-4ae5-b8b6-b8662c96cb85}, !- Availability Schedule Name
+  {56917aff-87b9-4e1b-a9a4-28f99394863e}, !- Air Outlet Node Name
+  {9f7910e0-0de9-4d7e-b6a6-f7e3d7ff0954}, !- Air Inlet Node Name
+  autosize,                               !- Maximum Air Flow Rate {m3/s}
+  Constant,                               !- Zone Minimum Air Flow Input Method
+  0.3,                                    !- Constant Minimum Air Flow Fraction
+  ,                                       !- Fixed Minimum Air Flow Rate {m3/s}
+  ,                                       !- Minimum Air Flow Fraction Schedule Name
+  No;                                     !- Control For Outdoor Air
+
+OS:Node,
+  {fa37be99-aa86-4be3-90b1-5e8382cc78c4}, !- Handle
+  Node 13,                                !- Name
+  {f38cf3e6-0d48-4e8e-ae40-d69c800a04ef}, !- Inlet Port
+  {9f7910e0-0de9-4d7e-b6a6-f7e3d7ff0954}; !- Outlet Port
+
+OS:Connection,
+  {f38cf3e6-0d48-4e8e-ae40-d69c800a04ef}, !- Handle
+  {4b12be7e-0f35-4fc2-a9f3-c3798978f217}, !- Name
+  {915b2a4c-02db-4771-ba72-de4a0288f4db}, !- Source Object
+  3,                                      !- Outlet Port
+  {fa37be99-aa86-4be3-90b1-5e8382cc78c4}, !- Target Object
+  2;                                      !- Inlet Port
+
+OS:Connection,
+  {9f7910e0-0de9-4d7e-b6a6-f7e3d7ff0954}, !- Handle
+  {d496ba12-6436-4e44-b675-4acaa2574af2}, !- Name
+  {fa37be99-aa86-4be3-90b1-5e8382cc78c4}, !- Source Object
+  3,                                      !- Outlet Port
+  {64aad699-edf5-4d95-aa9c-f0e4a4076f14}, !- Target Object
+  4;                                      !- Inlet Port
+
+OS:Connection,
+  {56917aff-87b9-4e1b-a9a4-28f99394863e}, !- Handle
+  {bde375cc-8271-4fbc-911e-f66e70d3ad2d}, !- Name
+  {64aad699-edf5-4d95-aa9c-f0e4a4076f14}, !- Source Object
+  3,                                      !- Outlet Port
+  {4e0926d7-4998-473b-bc6a-ab24bc00755e}, !- Target Object
+  2;                                      !- Inlet Port
 

@@ -67,3 +67,5 @@ I really think systems are working against each other during summer because of t
  Temperature are negligibly lower when turning off heating, but heating consumption is way under...where does all this heat go then?
 
  Temperature doesn't change with no heating avaibility from april to september. Only Nat vent seems to be a little higher...
+ Temperature didn't move much because there was a reheat on the VAV. 
+ I need to modify plants loads so that I don't have any when there's no sun, otherwise I might have heating need during summer night.
