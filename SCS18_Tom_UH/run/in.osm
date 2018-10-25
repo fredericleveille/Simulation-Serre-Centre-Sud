@@ -25796,7 +25796,7 @@ OS:Schedule:FixedInterval,
   0.065433391;                            !- Value 8760
 
 OS:Site:GroundTemperature:BuildingSurface,
-  {6cd70832-e2ad-4b7b-aca0-a2f909df04ac}, !- Handle
+  {5ec0dac5-79e6-45a9-ae91-fc5ececd22a5}, !- Handle
   2.47,                                   !- January Ground Temperature {C}
   4.08,                                   !- February Ground Temperature {C}
   7.22,                                   !- March Ground Temperature {C}
@@ -25811,114 +25811,114 @@ OS:Site:GroundTemperature:BuildingSurface,
   3.24;                                   !- December Ground Temperature {C}
 
 OS:Output:Variable,
-  {3e46b7e9-164d-4ce2-b9a6-746972baf465}, !- Handle
+  {96a5e42f-5a12-49db-be3c-5ba8eeb61166}, !- Handle
   Output Variable 1,                      !- Name
   *,                                      !- Key Value
   Heating Coil Gas Energy ,               !- Variable Name
   hourly;                                 !- Reporting Frequency
 
 OS:Output:Variable,
-  {1efd9278-0785-4266-836d-a11ec9006505}, !- Handle
+  {31d7142b-3ab3-4bb1-99bd-06f2809a30c2}, !- Handle
   Output Variable 2,                      !- Name
   *,                                      !- Key Value
   Facility Total Purchased Electric Energy, !- Variable Name
   hourly;                                 !- Reporting Frequency
 
 OS:Output:Variable,
-  {5f2c7968-3568-48fa-90bf-fdb963ef8fdc}, !- Handle
+  {fea6bc28-4186-46e7-b612-6418f749853f}, !- Handle
   Output Variable 3,                      !- Name
   *,                                      !- Key Value
   Facility Total Purchased Electric Energy, !- Variable Name
   runperiod;                              !- Reporting Frequency
 
 OS:Output:Variable,
-  {f34ce198-edd1-4cf5-b6ba-d3b062c49785}, !- Handle
+  {da6f396c-2231-40aa-9fe0-3e1098a8dca5}, !- Handle
   Output Variable 4,                      !- Name
   *,                                      !- Key Value
   Heating Coil Gas Energy ,               !- Variable Name
   runperiod;                              !- Reporting Frequency
 
 OS:Output:Variable,
-  {1d819cfc-4ffe-4db7-b89b-521644d73856}, !- Handle
+  {e92abf72-ef56-4f38-86ed-4eb2ed19f85c}, !- Handle
   Output Variable 5,                      !- Name
   *,                                      !- Key Value
   Zone Mean Air Temperature,              !- Variable Name
   hourly;                                 !- Reporting Frequency
 
 OS:Output:Variable,
-  {c406974d-0176-4e52-8f87-172be1488287}, !- Handle
+  {863fb9f4-1469-4333-a33f-e7f8b8836c80}, !- Handle
   Output Variable 6,                      !- Name
   *,                                      !- Key Value
   Zone Air Relative Humidity,             !- Variable Name
   hourly;                                 !- Reporting Frequency
 
 OS:Output:Variable,
-  {da8707ff-cd7c-4a59-b531-9c4815445a74}, !- Handle
+  {bc316d3c-9530-42ad-9002-b3d984d4a7a9}, !- Handle
   Output Variable 7,                      !- Name
   *,                                      !- Key Value
   Other Equipment Total Heating Rate,     !- Variable Name
   hourly;                                 !- Reporting Frequency
 
 OS:Output:Variable,
-  {9e13f278-d26f-4d91-9206-2af16cd81d69}, !- Handle
+  {d0b1a2aa-d06a-47c7-8c2d-16c9787b6623}, !- Handle
   Output Variable 8,                      !- Name
   *,                                      !- Key Value
   Other Equipment Latent Gain Rate,       !- Variable Name
   hourly;                                 !- Reporting Frequency
 
 OS:Output:Variable,
-  {c9145285-71e7-406a-8b32-967533068721}, !- Handle
+  {98f67ba3-1f81-43d7-9ca6-3639368344df}, !- Handle
   Output Variable 9,                      !- Name
   *,                                      !- Key Value
   Zone Ventilation Mass Flow Rate,        !- Variable Name
   hourly;                                 !- Reporting Frequency
 
 OS:Output:Variable,
-  {13b821e6-4fd5-448e-9d56-4289496fafb1}, !- Handle
+  {1d1f8e36-ac18-40fa-b087-18314ae78fce}, !- Handle
   Output Variable 10,                     !- Name
   *,                                      !- Key Value
   Air System Mixed Air Mass Flow Rate,    !- Variable Name
   hourly;                                 !- Reporting Frequency
 
 OS:Output:Variable,
-  {fced3248-deb3-4032-a5f6-b8e0b88f18a3}, !- Handle
+  {81efaf6d-7ee7-4d53-8e7c-b530e591adc3}, !- Handle
   Output Variable 11,                     !- Name
   *,                                      !- Key Value
   Zone Dehumidifier Sensible Heating Rate, !- Variable Name
   hourly;                                 !- Reporting Frequency
 
 OS:Output:Variable,
-  {8aac717e-12ec-4523-a517-fe2d1857a518}, !- Handle
+  {be7decee-5405-48a3-852d-de6f1ed8ed44}, !- Handle
   Output Variable 12,                     !- Name
   *,                                      !- Key Value
   Zone Dehumidifier Electric Power,       !- Variable Name
   hourly;                                 !- Reporting Frequency
 
 OS:Output:Variable,
-  {ef0998bb-ad15-4ab8-8176-0c9c533b91cf}, !- Handle
+  {4bdb40a3-c78d-4a5e-b14b-727d8ae7a187}, !- Handle
   Output Variable 13,                     !- Name
   *,                                      !- Key Value
   Zone Dehumidifier Removed Water Mass,   !- Variable Name
   hourly;                                 !- Reporting Frequency
 
 OS:Output:Variable,
-  {0242630d-8d0f-4ff4-96d9-e09c685c5ebd}, !- Handle
+  {6d8e1d49-8d35-4302-9a45-d26c7b6e97fa}, !- Handle
   Output Variable 14,                     !- Name
   *,                                      !- Key Value
   Zone Unit Heater Heating Rate,          !- Variable Name
   hourly;                                 !- Reporting Frequency
 
 OS:Output:Variable,
-  {1d18fc22-e9eb-474f-9d75-2f9bf13611d7}, !- Handle
+  {087f857f-3b0b-4b61-8fcd-6e3aca5919d1}, !- Handle
   Output Variable 15,                     !- Name
   *,                                      !- Key Value
-  Zone Unit Heater Heating Rate,          !- Variable Name
+  Zone Unit Heater Heating Energy,        !- Variable Name
   runperiod;                              !- Reporting Frequency
 
 OS:Output:Variable,
-  {1aa1c987-9354-418e-97ab-b6f31227e879}, !- Handle
+  {6e6cf78a-6246-44cc-a5ac-ef35177ccad8}, !- Handle
   Output Variable 16,                     !- Name
   *,                                      !- Key Value
-  Zone Dehumidifier Electric Power,       !- Variable Name
+  Zone Dehumidifier Electric Energy,      !- Variable Name
   runperiod;                              !- Reporting Frequency
 
