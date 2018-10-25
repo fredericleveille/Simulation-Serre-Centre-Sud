@@ -65,3 +65,5 @@ I could try adding april and septembre to the non avaibility.
 I really think systems are working against each other during summer because of their control type.
  I'm not sure control by aticipated load of the heater unit takes into account sensible heating by DX dehumidifier and/or other equipment.
  Temperature are negligibly lower when turning off heating, but heating consumption is way under...where does all this heat go then?
+
+ Temperature doesn't change with no heating avaibility from april to september. Only Nat vent seems to be a little higher...

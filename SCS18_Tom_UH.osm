@@ -26231,10 +26231,10 @@ OS:Schedule:Rule,
   Yes,                                    !- Apply Saturday
   ,                                       !- Apply Holiday
   DateRange,                              !- Date Specification Type
-  5,                                      !- Start Month
+  4,                                      !- Start Month
   1,                                      !- Start Day
   9,                                      !- End Month
-  1;                                      !- End Day
+  30;                                     !- End Day
 
 OS:Schedule:Day,
   {f6ea75b3-8c21-4eae-a231-f5cc3747bb7a}, !- Handle
