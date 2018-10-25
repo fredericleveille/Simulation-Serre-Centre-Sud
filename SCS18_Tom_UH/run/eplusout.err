@@ -1,4 +1,4 @@
-Program Version,EnergyPlus, Version 8.9.0-eba93e8e1b, YMD=2018.10.25 10:18,
+Program Version,EnergyPlus, Version 8.9.0-eba93e8e1b, YMD=2018.10.25 10:26,
    ************* Beginning Zone Sizing Calculations
    ** Warning ** Site:GroundTemperature:BuildingSurface: Some values fall outside the range of 15-25C.
    **   ~~~   ** These values may be inappropriate.  Please consult the Input Output Reference for more details.
@@ -30,8 +30,8 @@ Program Version,EnergyPlus, Version 8.9.0-eba93e8e1b, YMD=2018.10.25 10:18,
    ************* No node connection errors were found.
    ************* Beginning Simulation
    ** Warning ** Calculated Relative Humidity out of range (PsyRhFnTdbWPb) 
-   **   ~~~   **  Routine=Unknown, Environment=RUN PERIOD 1, at Simulation time=01/04 13:50 - 13:53
-   **   ~~~   **  Dry-Bulb= 22.67 Humidity Ratio= 1.735E-002 Calculated Relative Humidity [%]= 101.03
+   **   ~~~   **  Routine=Unknown, Environment=RUN PERIOD 1, at Simulation time=03/04 13:40 - 13:43
+   **   ~~~   **  Dry-Bulb= 23.45 Humidity Ratio= 1.904E-002 Calculated Relative Humidity [%]= 104.80
    **   ~~~   ** Relative Humidity being reset to 100.0%
    ** Warning ** SimHVAC: Maximum iterations (20) exceeded for all HVAC loops, at RUN PERIOD 1, 07/24 03:55 - 03:56
    **   ~~~   ** The solution for one or more of the Air Loop HVAC systems did not appear to converge
@@ -56,10 +56,10 @@ Program Version,EnergyPlus, Version 8.9.0-eba93e8e1b, YMD=2018.10.25 10:18,
    ************* The following recurring error messages occurred.
    *************
    *************  ** Warning ** Calculated Relative Humidity out of range (PsyRhFnTdbWPb)
-   *************  **   ~~~   **   This error occurred 140 total times;
+   *************  **   ~~~   **   This error occurred 127 total times;
    *************  **   ~~~   **   during Warmup 0 times;
    *************  **   ~~~   **   during Sizing 0 times.
-   *************  **   ~~~   **   Max=109.685819 %  Min=101.004686 %
+   *************  **   ~~~   **   Max=110.4162 %  Min=101.025998 %
    *************
    *************
    ************* ===== Final Error Summary =====
@@ -71,4 +71,4 @@ Program Version,EnergyPlus, Version 8.9.0-eba93e8e1b, YMD=2018.10.25 10:18,
    *************
    ************* EnergyPlus Warmup Error Summary. During Warmup: 0 Warning; 0 Severe Errors.
    ************* EnergyPlus Sizing Error Summary. During Sizing: 12 Warning; 0 Severe Errors.
-   ************* EnergyPlus Completed Successfully-- 161 Warning; 0 Severe Errors; Elapsed Time=00hr 00min 26.31sec
+   ************* EnergyPlus Completed Successfully-- 148 Warning; 0 Severe Errors; Elapsed Time=00hr 00min 27.34sec
