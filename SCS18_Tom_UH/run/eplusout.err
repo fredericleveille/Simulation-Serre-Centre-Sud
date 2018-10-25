@@ -1,4 +1,4 @@
-Program Version,EnergyPlus, Version 8.9.0-eba93e8e1b, YMD=2018.10.25 13:51,
+Program Version,EnergyPlus, Version 8.9.0-eba93e8e1b, YMD=2018.10.25 14:33,
    ************* Beginning Zone Sizing Calculations
    ** Warning ** Site:GroundTemperature:BuildingSurface: Some values fall outside the range of 15-25C.
    **   ~~~   ** These values may be inappropriate.  Please consult the Input Output Reference for more details.
@@ -40,12 +40,7 @@ Program Version,EnergyPlus, Version 8.9.0-eba93e8e1b, YMD=2018.10.25 13:51,
    ** Warning ** The following Report Variables were requested but not generated -- check.rdd file
    **   ~~~   ** Either the IDF did not contain these elements, the variable name is misspelled,
    **   ~~~   ** or the requested variable is an advanced output which requires Output : Diagnostics, DisplayAdvancedReportVariables;
-   ************* Key=*, VarName=AIR SYSTEM DX COOLING COIL ELECTRIC ENERGY, Frequency=Hourly
-   ************* Key=*, VarName=COOLING COIL LATENT COOLING RATE, Frequency=Hourly
-   ************* Key=*, VarName=COOLING COIL TOTAL COOLING RATE, Frequency=Hourly
-   ************* Key=*, VarName=ZONE AIR TERMINAL OUTDOOR AIR VOLUME FLOW RATE, Frequency=Hourly
    ************* Key=*, VarName=AIR SYSTEM MIXED AIR MASS FLOW RATE, Frequency=Hourly
-   ************* Key=*, VarName=AIR SYSTEM DX COOLING COIL ELECTRIC ENERGY, Frequency=Hourly
    ************* There are 16 unused schedules in input.
    ************* There are 23 unused week schedules in input.
    ************* There are 59 unused day schedules in input.
@@ -70,4 +65,4 @@ Program Version,EnergyPlus, Version 8.9.0-eba93e8e1b, YMD=2018.10.25 13:51,
    *************
    ************* EnergyPlus Warmup Error Summary. During Warmup: 0 Warning; 0 Severe Errors.
    ************* EnergyPlus Sizing Error Summary. During Sizing: 9 Warning; 0 Severe Errors.
-   ************* EnergyPlus Completed Successfully-- 48 Warning; 0 Severe Errors; Elapsed Time=00hr 00min 28.94sec
+   ************* EnergyPlus Completed Successfully-- 48 Warning; 0 Severe Errors; Elapsed Time=00hr 00min 29.18sec

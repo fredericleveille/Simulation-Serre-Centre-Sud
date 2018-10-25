@@ -98,57 +98,12 @@
       },
       {
          "arguments" : {
-            "variable_name" : "Air System DX Cooling Coil Electric Energy"
-         },
-         "description" : "This measure adds an output variable at the requested reporting frequency.",
-         "measure_dir_name" : "AddOutputVariable",
-         "modeler_description" : "The measure just passes in the string and does not validate that it is a proper variable name. It is up to the user to know this or to look at the .rdd file from a previous simulation run.",
-         "name" : "Add Air System DX Cooling Coil Electric Energy"
-      },
-      {
-         "arguments" : {
-            "variable_name" : "Air System DX Cooling Coil Electric Energy"
-         },
-         "description" : "This measure adds an output variable at the requested reporting frequency.",
-         "measure_dir_name" : "AddOutputVariable",
-         "modeler_description" : "The measure just passes in the string and does not validate that it is a proper variable name. It is up to the user to know this or to look at the .rdd file from a previous simulation run.",
-         "name" : "Add Air System DX Cooling Coil Electric Energy"
-      },
-      {
-         "arguments" : {
-            "variable_name" : "Cooling Coil Latent Cooling Rate"
-         },
-         "description" : "This measure adds an output variable at the requested reporting frequency.",
-         "measure_dir_name" : "AddOutputVariable",
-         "modeler_description" : "The measure just passes in the string and does not validate that it is a proper variable name. It is up to the user to know this or to look at the .rdd file from a previous simulation run.",
-         "name" : "Add Cooling Coil Latent Cooling Rate"
-      },
-      {
-         "arguments" : {
-            "variable_name" : "Cooling Coil Total Cooling Rate"
-         },
-         "description" : "This measure adds an output variable at the requested reporting frequency.",
-         "measure_dir_name" : "AddOutputVariable",
-         "modeler_description" : "The measure just passes in the string and does not validate that it is a proper variable name. It is up to the user to know this or to look at the .rdd file from a previous simulation run.",
-         "name" : "Add Cooling Coil Total Cooling Rate"
-      },
-      {
-         "arguments" : {
             "variable_name" : "Zone Ventilation Mass Flow Rate"
          },
          "description" : "This measure adds an output variable at the requested reporting frequency.",
          "measure_dir_name" : "AddOutputVariable",
          "modeler_description" : "The measure just passes in the string and does not validate that it is a proper variable name. It is up to the user to know this or to look at the .rdd file from a previous simulation run.",
          "name" : "Add Zone Ventilation Mass Flow Rate"
-      },
-      {
-         "arguments" : {
-            "variable_name" : "Zone Air Terminal Outdoor Air Volume Flow Rate"
-         },
-         "description" : "This measure adds an output variable at the requested reporting frequency.",
-         "measure_dir_name" : "AddOutputVariable",
-         "modeler_description" : "The measure just passes in the string and does not validate that it is a proper variable name. It is up to the user to know this or to look at the .rdd file from a previous simulation run.",
-         "name" : "Add Zone Air Terminal Outdoor Air Volume Flow Rate"
       },
       {
          "arguments" : {
@@ -188,15 +143,6 @@
       },
       {
          "arguments" : {
-            "variable_name" : "Zone Mechanical Ventilation Mass Flow Rate"
-         },
-         "description" : "This measure adds an output variable at the requested reporting frequency.",
-         "measure_dir_name" : "AddOutputVariable",
-         "modeler_description" : "The measure just passes in the string and does not validate that it is a proper variable name. It is up to the user to know this or to look at the .rdd file from a previous simulation run.",
-         "name" : "Add Zone Mechanical Ventilation Mass Flow Rate"
-      },
-      {
-         "arguments" : {
             "variable_name" : "Zone Unit Heater Heating Rate"
          },
          "description" : "This measure adds an output variable at the requested reporting frequency.",
@@ -206,23 +152,25 @@
       },
       {
          "arguments" : {
-            "variable_name" : "Zone Predicted Sensible Load to Cooling Setpoint Heat Transfer Rate"
+            "reporting_frequency" : "runperiod",
+            "variable_name" : "Zone Unit Heater Heating Rate"
          },
          "description" : "This measure adds an output variable at the requested reporting frequency.",
          "measure_dir_name" : "AddOutputVariable",
          "modeler_description" : "The measure just passes in the string and does not validate that it is a proper variable name. It is up to the user to know this or to look at the .rdd file from a previous simulation run.",
-         "name" : "Add Zone Predicted Sensible Load to Cooling Setpoint Heat Transfer Rate"
+         "name" : "Add Yearly Zone Unit Heater Heating Rate"
       },
       {
          "arguments" : {
-            "variable_name" : "Zone Predicted Sensible Load to Heating Setpoint Heat Transfer Rate"
+            "reporting_frequency" : "runperiod",
+            "variable_name" : "Zone Dehumidifier Electric Power"
          },
          "description" : "This measure adds an output variable at the requested reporting frequency.",
          "measure_dir_name" : "AddOutputVariable",
          "modeler_description" : "The measure just passes in the string and does not validate that it is a proper variable name. It is up to the user to know this or to look at the .rdd file from a previous simulation run.",
-         "name" : "Add Zone Predicted Sensible Load to Heating Setpoint Heat Transfer Rate"
+         "name" : "Add Yearly Zone Dehumidifier Electric Power"
       }
    ],
-   "updated_at" : "20181025T153314Z",
+   "updated_at" : "20181025T183133Z",
    "weather_file" : "CAN_PQ_Montreal.Intl.AP.716270_CWEC.epw"
 }
