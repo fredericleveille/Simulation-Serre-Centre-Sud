@@ -26170,7 +26170,7 @@ OS:Schedule:Rule,
   Yes,                                    !- Apply Saturday
   ,                                       !- Apply Holiday
   DateRange,                              !- Date Specification Type
-  1,                                      !- Start Month
+  4,                                      !- Start Month
   1,                                      !- Start Day
   9,                                      !- End Month
   30;                                     !- End Day

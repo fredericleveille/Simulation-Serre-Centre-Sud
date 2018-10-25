@@ -68,4 +68,5 @@ I really think systems are working against each other during summer because of t
 
  Temperature doesn't change with no heating avaibility from april to september. Only Nat vent seems to be a little higher...
  Temperature didn't move much because there was a reheat on the VAV. 
+ Whith no reheat I can't control during winter. worth a try to keep april and septembre becaus of dehumidifier.
  I need to modify plants loads so that I don't have any when there's no sun, otherwise I might have heating need during summer night.
