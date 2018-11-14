@@ -1,0 +1,176 @@
+{
+   "created_at" : "20181018T174942Z",
+   "seed_file" : "../SCS18_Tom_UH.osm",
+   "steps" : [
+      {
+         "arguments" : {
+            "aggt" : 18.899999999999999,
+            "apgt" : 10.18,
+            "dgt" : 3.2400000000000002,
+            "fgt" : 4.0800000000000001,
+            "jgt" : 2.4700000000000002,
+            "julgt" : 20.550000000000001,
+            "jungt" : 19.43,
+            "magt" : 16.02,
+            "margt" : 7.2199999999999998,
+            "ngt" : 6.04,
+            "ogt" : 10.289999999999999,
+            "sgt" : 14.609999999999999
+         },
+         "description" : "This measure sets the groundsurfacetemperature to a value defined by the user\n",
+         "measure_dir_name" : "set_ground_surface_temperature",
+         "modeler_description" : "",
+         "name" : "Set ground surface temperature"
+      },
+      {
+         "arguments" : {
+            "variable_name" : "Heating Coil Gas Energy "
+         },
+         "description" : "This measure adds an output variable at the requested reporting frequency.",
+         "measure_dir_name" : "AddOutputVariable",
+         "modeler_description" : "The measure just passes in the string and does not validate that it is a proper variable name. It is up to the user to know this or to look at the .rdd file from a previous simulation run.",
+         "name" : "AddOutputVariable Heating Coil Gas Energy "
+      },
+      {
+         "arguments" : {
+            "variable_name" : "Facility Total Purchased Electric Energy"
+         },
+         "description" : "This measure adds an output variable at the requested reporting frequency.",
+         "measure_dir_name" : "AddOutputVariable",
+         "modeler_description" : "The measure just passes in the string and does not validate that it is a proper variable name. It is up to the user to know this or to look at the .rdd file from a previous simulation run.",
+         "name" : "Add Facility Total Purchased Electric Energy"
+      },
+      {
+         "arguments" : {
+            "reporting_frequency" : "runperiod",
+            "variable_name" : "Facility Total Purchased Electric Energy"
+         },
+         "description" : "This measure adds an output variable at the requested reporting frequency.",
+         "measure_dir_name" : "AddOutputVariable",
+         "modeler_description" : "The measure just passes in the string and does not validate that it is a proper variable name. It is up to the user to know this or to look at the .rdd file from a previous simulation run.",
+         "name" : "Add yearly electric consumption"
+      },
+      {
+         "arguments" : {
+            "reporting_frequency" : "runperiod",
+            "variable_name" : "Heating Coil Gas Energy "
+         },
+         "description" : "This measure adds an output variable at the requested reporting frequency.",
+         "measure_dir_name" : "AddOutputVariable",
+         "modeler_description" : "The measure just passes in the string and does not validate that it is a proper variable name. It is up to the user to know this or to look at the .rdd file from a previous simulation run.",
+         "name" : "yearly gaz consumption"
+      },
+      {
+         "arguments" : {
+            "variable_name" : "Zone Mean Air Temperature"
+         },
+         "description" : "This measure adds an output variable at the requested reporting frequency.",
+         "measure_dir_name" : "AddOutputVariable",
+         "modeler_description" : "The measure just passes in the string and does not validate that it is a proper variable name. It is up to the user to know this or to look at the .rdd file from a previous simulation run.",
+         "name" : "Add Zone Mean Air Temperature"
+      },
+      {
+         "arguments" : {
+            "variable_name" : "Zone Air Relative Humidity"
+         },
+         "description" : "This measure adds an output variable at the requested reporting frequency.",
+         "measure_dir_name" : "AddOutputVariable",
+         "modeler_description" : "The measure just passes in the string and does not validate that it is a proper variable name. It is up to the user to know this or to look at the .rdd file from a previous simulation run.",
+         "name" : "Add Zone Air Relative Humidity"
+      },
+      {
+         "arguments" : {
+            "variable_name" : "Other Equipment Total Heating Rate"
+         },
+         "description" : "This measure adds an output variable at the requested reporting frequency.",
+         "measure_dir_name" : "AddOutputVariable",
+         "modeler_description" : "The measure just passes in the string and does not validate that it is a proper variable name. It is up to the user to know this or to look at the .rdd file from a previous simulation run.",
+         "name" : "Add Other Equipment Total Heating Rate"
+      },
+      {
+         "arguments" : {
+            "variable_name" : "Other Equipment Latent Gain Rate"
+         },
+         "description" : "This measure adds an output variable at the requested reporting frequency.",
+         "measure_dir_name" : "AddOutputVariable",
+         "modeler_description" : "The measure just passes in the string and does not validate that it is a proper variable name. It is up to the user to know this or to look at the .rdd file from a previous simulation run.",
+         "name" : "Add Other Equipment Latent Gain Rate"
+      },
+      {
+         "arguments" : {
+            "variable_name" : "Zone Ventilation Mass Flow Rate"
+         },
+         "description" : "This measure adds an output variable at the requested reporting frequency.",
+         "measure_dir_name" : "AddOutputVariable",
+         "modeler_description" : "The measure just passes in the string and does not validate that it is a proper variable name. It is up to the user to know this or to look at the .rdd file from a previous simulation run.",
+         "name" : "Add Zone Ventilation Mass Flow Rate"
+      },
+      {
+         "arguments" : {
+            "variable_name" : "Air System Mixed Air Mass Flow Rate"
+         },
+         "description" : "This measure adds an output variable at the requested reporting frequency.",
+         "measure_dir_name" : "AddOutputVariable",
+         "modeler_description" : "The measure just passes in the string and does not validate that it is a proper variable name. It is up to the user to know this or to look at the .rdd file from a previous simulation run.",
+         "name" : "Add Air System Mixed Air Mass Flow Rate"
+      },
+      {
+         "arguments" : {
+            "variable_name" : "Zone Dehumidifier Sensible Heating Rate"
+         },
+         "description" : "This measure adds an output variable at the requested reporting frequency.",
+         "measure_dir_name" : "AddOutputVariable",
+         "modeler_description" : "The measure just passes in the string and does not validate that it is a proper variable name. It is up to the user to know this or to look at the .rdd file from a previous simulation run.",
+         "name" : "Add Zone Dehumidifier Sensible Heating Rate"
+      },
+      {
+         "arguments" : {
+            "variable_name" : "Zone Dehumidifier Electric Power"
+         },
+         "description" : "This measure adds an output variable at the requested reporting frequency.",
+         "measure_dir_name" : "AddOutputVariable",
+         "modeler_description" : "The measure just passes in the string and does not validate that it is a proper variable name. It is up to the user to know this or to look at the .rdd file from a previous simulation run.",
+         "name" : "Add Zone Dehumidifier Electric Power"
+      },
+      {
+         "arguments" : {
+            "variable_name" : "Zone Dehumidifier Removed Water Mass"
+         },
+         "description" : "This measure adds an output variable at the requested reporting frequency.",
+         "measure_dir_name" : "AddOutputVariable",
+         "modeler_description" : "The measure just passes in the string and does not validate that it is a proper variable name. It is up to the user to know this or to look at the .rdd file from a previous simulation run.",
+         "name" : "Add Zone Dehumidifier Removed Water Mass"
+      },
+      {
+         "arguments" : {
+            "variable_name" : "Zone Unit Heater Heating Rate"
+         },
+         "description" : "This measure adds an output variable at the requested reporting frequency.",
+         "measure_dir_name" : "AddOutputVariable",
+         "modeler_description" : "The measure just passes in the string and does not validate that it is a proper variable name. It is up to the user to know this or to look at the .rdd file from a previous simulation run.",
+         "name" : "Add Zone Unit Heater Heating Rate"
+      },
+      {
+         "arguments" : {
+            "reporting_frequency" : "runperiod",
+            "variable_name" : "Zone Unit Heater Heating Energy"
+         },
+         "description" : "This measure adds an output variable at the requested reporting frequency.",
+         "measure_dir_name" : "AddOutputVariable",
+         "modeler_description" : "The measure just passes in the string and does not validate that it is a proper variable name. It is up to the user to know this or to look at the .rdd file from a previous simulation run.",
+         "name" : "Add Yearly Zone Unit Heater Heating Energy"
+      },
+      {
+         "arguments" : {
+            "reporting_frequency" : "runperiod",
+            "variable_name" : "Zone Dehumidifier Electric Energy"
+         },
+         "description" : "This measure adds an output variable at the requested reporting frequency.",
+         "measure_dir_name" : "AddOutputVariable",
+         "modeler_description" : "The measure just passes in the string and does not validate that it is a proper variable name. It is up to the user to know this or to look at the .rdd file from a previous simulation run.",
+         "name" : "Add Yearly Zone Dehumidifier Electric Energy"
+      }
+   ],
+   "updated_at" : "20181025T184139Z",
+   "weather_file" : "CAN_PQ_Montreal.Intl.AP.716270_CWEC.epw"
+}
